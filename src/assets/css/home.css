@@ -1,0 +1,130 @@
+#weather .weather-cont{background-position:0 0;background-repeat:no-repeat;background-size:cover;position:relative;}
+.today-life-index{background:#fff;margin:0.2rem 0;}
+.today-life-index .btitle{padding:0 0.2rem;font-size:0.37rem;line-height:0.70rem;border-bottom:1px solid #ededed}
+.today-life-index .btitle a {
+    float: right;
+    color: #3097fd;
+    font-size:0.25rem;
+}
+.today-life-index .btitle a:after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.1rem;
+    width:0.15rem;
+    height:0.15rem;
+    border-width:1px;
+    border-style:solid;
+    border-color:transparent #3097fd #3097fd transparent;
+    transform:rotate(-45deg);
+}
+.life-icon-allergy1, .life-icon-allergy2, .life-icon-calendar, .life-icon-carwash1, .life-icon-carwash2, .life-icon-cloth1, .life-icon-cloth2, .life-icon-cloth3, .life-icon-cloth4, .life-icon-cold1, .life-icon-cold2, .life-icon-dressed1, .life-icon-dressed2, .life-icon-fishing1, .life-icon-fishing2, .life-icon-moring1, .life-icon-moring2, .life-icon-rain1, .life-icon-rain2, .life-icon-sun1, .life-icon-sun2, .life-icon-traffic1, .life-icon-traffic2 {
+    background: url('../assets/life-icon.png');
+    background-size: 0.7rem auto;
+    background-repeat: no-repeat;
+    width: 0.9rem;
+    height:0.7rem;
+}
+.today-life-index .bmeta dt,.today-life-index .bmeta dd{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.today-life-index .bmeta dt div:first-of-type {
+    border-right: 1px solid #ededed;
+}
+.today-life-index .bmeta dt div{
+    width: 50%;
+    padding:0.2rem 0.3rem;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.life-icon-cloth1 {
+    background-position: 0 -3.7rem;
+}
+.life-icon-calendar{
+    background-position: 0 -1.5rem;
+}
+.today-life-index .bmeta dt p{color:#4e4e4e}
+.today-life-index .bmeta dt p span {
+    font-size: 0.24rem;
+    color: #8d8d8d;
+}
+.today-life-index .bmeta dd div {
+    width: 33.33333%;
+    padding:0.4rem 0.3rem;
+    border: #ededed solid;
+    border-width: 1px 1px 0 0;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    text-align:center;
+}
+.today-life-index .bmeta dd span{
+    display:inline-block;
+}
+.today-life-index .bmeta dd p{
+
+}
+.life-icon-rain1{
+    background-position: 0.1rem -12.6rem;
+}
+.life-icon-rain2{
+    background-position: 0.1rem -13.4rem;
+}
+.life-icon-cold2{
+    background-position: 0.1rem -7.45rem;
+}
+.life-icon-cold1{
+    background-position: 0.1rem -6.65rem;
+}
+.life-icon-allergy1{
+    background-position: 0.1rem 0;
+}
+.life-icon-allergy2{
+    background-position: 0.1rem -0.8rem;
+}
+.life-icon-moring1{
+    background-position: 0.1rem -11.2rem;
+}
+.life-icon-moring2{
+    background-position: 0.1rem -12rem;
+}
+.life-icon-dressed1{
+    background-position: 0.1rem -8.2rem;
+}
+.life-icon-dressed2{
+    background-position: 0.1rem -9rem;
+}
+.life-icon-sun1{
+    background-position: 0.1rem -14.1rem;
+}
+.life-icon-sun2{
+    background-position: 0.1rem -14.9rem;
+}
+.life-icon-carwash2{
+    background-position: 0.1rem -3rem;
+}
+.life-icon-carwash1{
+    background-position: 0.1rem -2.2rem;
+}
+.life-icon-traffic1{
+    background-position: 0.1rem -15.6rem;
+}
+.life-icon-traffic2{
+    background-position: 0.1rem -16.4rem;
+}
+.life-icon-fishing1{
+    background-position: 0.1rem -9.7rem;
+}
+.life-icon-fishing2{
+    background-position: 0.1rem -10.5rem;
+}

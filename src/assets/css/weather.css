@@ -1,0 +1,6616 @@
+.weather-wd,.day-li-bigwendu .day-wd {
+    font-family:'HelveticaThin'
+}
+body {
+    background:#ebebeb;
+    font-size:.28rem;
+    color:#888;
+    font-family:'Helvetica';
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    max-width:640px;
+    margin:0 auto
+}
+* {
+    padding:0;
+    margin:0
+}
+p {
+    margin:0;
+    margin:0
+}
+ul,ol,li {
+    list-style:none
+}
+a {
+    color:#888;
+    text-decoration:none
+}
+a:active,a:hover {
+    outline:0
+}
+img {
+    border:0
+}
+input,button,select,textarea {
+    outline:0;
+    -webkit-appearance:button;
+    border-radius:0
+}
+textarea {
+    resize:none
+}
+cite,em {
+    font-style:normal
+}
+.f-l {
+    float:left
+}
+.f-r {
+    float:right
+}
+.weathercont {
+    position:relative;
+    padding-top:.9rem
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+    padding:0
+}
+.page.page-current {
+    overflow:auto
+}
+.air-ellipsis {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis
+}
+.air-ellipsis-2 {
+    display:-webkit-box;
+    overflow:hidden;
+    white-space:normal!important;
+    text-overflow:ellipsis;
+    word-wrap:break-word;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical
+}
+.svnicon {
+    display:block;
+    width:.55rem;
+    height:.55rem;
+    background:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-qing.svg) 0 0 no-repeat;
+    background-size:100% 100%
+}
+.svnicon01 {
+    display:block;
+    width:.4rem;
+    height:.4rem;
+    background:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-qing.svg) 0 0 no-repeat;
+    background-size:100% 100%;
+    margin:0 auto;
+    margin-top:15px;
+    margin-bottom:15px
+}
+.weather-00 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-qing.svg)
+}
+.weather-n00 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-qingwan.svg)
+}
+.weather-01 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-douyun.svg)
+}
+.weather-n01 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-douyunwan.svg)
+}
+.weather-02 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-yintian.svg)
+}
+.weather-n02 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-yintian.svg)
+}
+.weather-03 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-zhenyu.svg)
+}
+.weather-n03 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-zhenyuwan.svg)
+}
+.weather-04 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-leizhengyu.svg)
+}
+.weather-n04 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-leizhengyuwan.svg)
+}
+.weather-05 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-leizhengyubanbingbao.svg)
+}
+.weather-n05 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-leizhengyubanbingbaowan.svg)
+}
+.weather-06,.weather-n06 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-yujiaxue.svg)
+}
+.weather-07,.weather-n07{
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-xiaoyu.svg)
+}
+.weather-08,.weather-n08 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-zhongyu.svg)
+}
+.weather-09,.weather-n09 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-dayu.svg)
+}
+.weather-10,.weather-n10 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-baoyu.svg)
+}
+.weather-11{
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-dabaoyu.svg)
+}
+.weather-12 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-tedabaoyu.svg)
+}
+.weather-13 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-zhenxue.svg)
+}
+.weather-n13 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-zhenxuewan.svg)
+}
+.weather-14 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-xiaoxue.svg)
+}
+.weather-15 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-zhongxue.svg)
+}
+.weather-16 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-daxue.svg)
+}
+.weather-17 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-baoxue.svg)
+}
+.weather-18 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-wu.svg)
+}
+.weather-57 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-wu2.svg)
+}
+.weather-n57 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-wu2wan.svg)
+}
+.weather-19 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-dongyu.svg)
+}
+.weather-20 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-shachengbao.svg)
+}
+.weather-21 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-xiaoyutozhongyu.svg)
+}
+.weather-22 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-zhongyutodayu.svg)
+}
+.weather-23 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-datobaoyu.svg)
+}
+.weather-24 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-baoyutodabaoyu.svg)
+}
+.weather-25 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-dabaoyutoteda.svg)
+}
+.weather-26 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-xiaoxuetozhongxue.svg)
+}
+.weather-27 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-zhongxuetodaxue.svg)
+}
+.weather-28 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-daxuetobaoxue.svg)
+}
+.weather-29 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-fuchen.svg)
+}
+.weather-30 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-yangsha-small.svg)
+}
+.weather-31 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-yangsha.svg)
+}
+.weather-131 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-qianshachenbao.svg)
+}
+.weather-57 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-dawu.svg)
+}
+.weather-d43 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-bingbao.svg)
+}
+.weather-d44 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-richu-back.svg)
+}
+.icon-yifu {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-yifu.svg)
+}
+.icon-yangguang {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-taiyang.svg)
+}
+.icon-xiaolian {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-xiaolian.svg)
+}
+.weather-53 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-mai.svg)
+}
+.weather-54 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-mai.svg)
+}
+.weather-55 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-mai.svg)
+}
+.weather-56 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-mai.svg)
+}
+.weather-32 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-dawu.svg)
+}
+.weather-49 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-dawu.svg)
+}
+.weather-58 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-dawu.svg)
+}
+.weather-301 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-xiaoyu.svg)
+}
+.weather-302 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-xiaoxue.svg)
+}
+header#header {
+    height:.9rem;
+    width:6.4rem;
+    clear:both;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    z-index:99999
+}
+.headerGrey {
+    background:#ebebeb
+}
+.headerblue {
+    background:#287fdd
+}
+#header .logo {
+    float:left;
+    padding-top:.15rem;
+    padding-left:.3rem;
+    margin-right:10px
+}
+#header .logo img {
+    display:block;
+    height:.6rem
+}
+.headerGrey h1.wea_news {
+    background:url(http://i.tq121.com.cn/i/wap2016/news/logo.png) 1rem center no-repeat;
+    background-size:15%
+}
+.headerGrey h1.wea_air {
+    background:url(http://i.tq121.com.cn/i/wap2016/news/logo.png) .7rem center no-repeat;
+    background-size:15%
+}
+header#header h1 {
+    display:block;
+    position:absolute;
+    left:1rem;
+    right:1rem;
+    text-align:center;
+    font-size:.33rem;
+    line-height:.9rem
+}
+#header .weatherfont {
+    font-size:.4rem
+}
+#header .icon-back01 {
+    position:absolute;
+    top:.18rem;
+    left:.28rem
+}
+#header .icon-fenxiang {
+    position:absolute;
+    top:.22rem;
+    right:.43rem
+}
+.headerGrey h1,.headerGrey .weatherfont {
+    color:#000
+}
+.headerblue h1,.headerblue .weatherfont {
+    color:#fff
+}
+#header .header-mr {
+    float:right;
+    padding-top:.3rem;
+    position:relative;
+    z-index:555;
+    padding-right:.2rem
+}
+.header-mr a {
+    float:left;
+    font-size:.4rem;
+    color:#4d4d4d;
+    margin-left:.3rem
+}
+.header-mr .icon-gengduo {
+    position:absolute;
+    top:.22rem;
+    right:.07rem;
+    color:#4d4d4d;
+    font-weight:normal
+}
+#header .header-mr .icon-fenxiang {
+    right:1.06rem;
+    color:#4d4d4d
+}
+#air-footer {
+    margin:.3rem auto 0;
+    padding-top:.5rem;
+    width:5.68rem;
+    height:3.5rem;
+    overflow:hidden;
+    border-top:1px solid #b2b2b2;
+    text-align:center
+}
+#air-footer i img {
+    display:block;
+    margin:0 auto .4rem;
+    height:.7rem
+}
+#air-footer nav {
+    height:.8rem;
+    font-size:.22rem
+}
+#air-footer nav span {
+    padding:0 10px
+}
+#air-footer p {
+    line-height:.4rem;
+    height:.4rem;
+    font-size:.18rem
+}
+#airQualityImg {
+    width:100%;
+    position:relative;
+    height:7.31rem
+}
+.air-back {
+    position:absolute;
+    width:100%
+}
+.air-back img {
+    display:block;
+    width:100%
+}
+
+@-webkit-keyframes STAR-MOVE {
+    from {
+        background-position:100% 0
+    }
+    to {
+        background-position:0 0
+    }
+}
+@keyframes STAR-MOVE {
+    from {
+        background-position:100% 0
+    }
+    to {
+        background-position:0 0
+    }
+}
+@-webkit-keyframes STAR-MOVEtwo {
+    from {
+    background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+@keyframes STAR-MOVEtwo {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+.weather-all {
+    background:rgba(0,0,0,0.3);
+    width:100%;
+    position:relative;
+    overflow: hidden;
+
+}
+.weather-title {
+    float:left;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    background:rgba(0,0,0,0.1);
+    display:none
+}
+.weather-title .title-name{
+    float:left;
+    padding-left:15px
+}
+.weather-title .title-data{
+    float:right;
+    margin-right:5px;
+    height:20px;
+    line-height:20px;
+    font-size:12px;
+    margin-top:10px;
+    padding:0 10px;
+    display:none
+}
+.weather-title .active{
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:10px
+}
+.tianqicontDiv {
+    width:100%;
+    overflow:hidden;
+    position:relative
+}
+.hours72 {
+    width:100%;
+    overflow:hidden;
+    overflow-x:scroll;
+    position:relative;
+    background:rgba(0,0,0,0.1)
+}
+.hours72 ul {
+    float:left;
+    position:relative;
+    width:365%;
+    margin:10px 0
+}
+.hours72 ul li {
+    width:4.16%;
+    float:left;
+    text-align:center;
+    font-size:12px;
+    background:0
+}
+.daysDiv15 {
+    float:left;
+    height:42px;
+    position:relative;
+    width:100%
+}
+.tianqicont {
+    float:left;
+    margin-bottom:5px;
+    width:102%;
+    position:relative;
+}
+.tianqicont-div{
+    position:relative;
+    overflow:hidden
+}
+.tianqicont-div ul {
+    position:absolute;
+    top:0;
+    width:100%;
+    float:left;
+    height:100%;
+    overflow:hidden
+}
+.tianqicont-div ul li {
+    width:16.66%;
+    float:left;
+    height:100%;
+    border-right:1px solid rgba(255,255,255,0.1)
+}
+
+.tianqicont-div ul .activeLi {
+    background:rgba(0,0,0,0.1)
+}
+#maxtemp {
+    height:90px;
+    width:100%;
+    float:left;
+    position:relative;
+    top:-10px
+}
+#mintemp {
+    height:90px;
+    width:100%;
+    float:left;
+    position:relative;
+    top:-10px;
+    margin-top:-30px
+}
+.weather-back {
+    width:100%;
+    overflow-x:hidden
+}
+#weather-container1 {
+    display:none
+}
+#weather-container2 {
+    display:none
+}
+.apostertop {
+    background:#ebebeb;
+    height:.8rem;
+    width:100%
+}
+#zhezhao72 {
+    width:100%;
+    height:101px;
+    position:absolute;
+    top:41px;
+    z-index:999;
+    background:#000;
+    opacity:.1;
+    display:none
+}
+div#midground {
+    background:url(http://i.tq121.com.cn/i/wap2016/news/midground1.png) 0 0 no-repeat;
+    z-index:1;
+    top:.87rem;
+    left:.1rem;
+    right:.1rem;
+    bottom:0;
+    -webkit-animation:STAR-MOVE 100s linear infinite;
+    -moz-animation:STAR-MOVE 100s linear infinite;
+    -ms-animation:STAR-MOVE 100s linear infinite;
+    animation:STAR-MOVE 100s linear infinite
+}
+div#foreground {
+    background:url(http://i.tq121.com.cn/i/wap2016/news/midground2.png) 0 0 no-repeat;
+    z-index:2;
+    top:1.42rem;
+    left:.1rem;
+    right:.1rem;
+    bottom:0;
+    -webkit-animation:STAR-MOVEtwo 100s linear infinite;
+    -moz-animation:STAR-MOVEtwo 100s linear infinite;
+    -ms-animation:STAR-MOVEtwo 100s linear infinite;
+    animation:STAR-MOVEtwo 100s linear infinite
+}
+#air-textCont {
+    position:absolute;
+    top:.4rem;
+    width:100%;
+    left:0;
+    z-index:3;
+    color:#fff
+}
+#air-textCont a {
+    color:#fff
+}
+h2.air-position {
+    display:block;
+    text-align:center;
+    font-size:.36rem;
+    height:1rem;
+    overflow:hidden
+}
+.addr-more {
+    display:block;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-next.png) 0 0 no-repeat;
+    width:.2rem;
+    height:.12rem;
+    background-size:100% 100%
+}
+h2.air-position i.addr-more {
+    display:inline-block;
+    margin-left:.1rem
+}
+.air-quality {
+    position:relative;
+    width:5.87rem;
+    height:3.03rem;
+    overflow:hidden;
+    margin:0 auto
+}
+.air-quality i img {
+    display:block;
+    width:100%
+}
+.air-quality-txt {
+    position:absolute;
+    top:1.8rem;
+    width:100%;
+    text-align:center;
+    font-size:.4rem
+}
+.air-quality-zhishu small {
+    font-size:.26rem
+}
+.air-ranking {
+    height:.6rem;
+    text-align:center;
+    font-size:.25rem;
+    text-indent:-9999px
+}
+.air-prompt {
+    height:1.32rem;
+    line-height:.36rem;
+    padding:.1rem .25rem;
+    width:5.2rem;
+    font-size:.24rem;
+    margin:0 auto .18rem
+}
+.air-prompt td {
+    height:1.32rem
+}
+.air-bottom {
+    width:5.5rem;
+    margin:0 auto;
+    height:.41rem;
+    line-height:.41rem;
+    overflow:hidden;
+    clear:both;
+    font-size:.22rem
+}
+.air-national-ranking {
+    float:right;
+    background:rgba(0,0,0,0.4);
+    border-radius:8px;
+    width:1.80rem;
+    height:.41rem;
+    line-height:.41rem;
+    text-align:center
+}
+.air-zhizhen {
+    position:absolute;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:.22rem;
+    height:.17rem;
+    bottom:.43rem;
+    left:.67rem
+}
+.air-zhizhen0,.air-zhizhen1,.air-zhizhen2,.air-zhizhen3,.air-zhizhen4 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-0.png);
+    bottom:.2rem;
+    left:1.1rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen1,.air-zhizhen2 {
+    bottom:.22rem;
+    left:1.11rem
+}
+.air-zhizhen3,.air-zhizhen4 {
+    bottom:.25rem;
+    left:1.11rem
+}
+.air-zhizhen5,.air-zhizhen6,.air-zhizhen7,.air-zhizhen8,.air-zhizhen9,.air-zhizhen10,.air-zhizhen11,.air-zhizhen12 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-6.png);
+    bottom:.28rem;
+    left:1.11rem
+}
+.air-zhizhen7,.air-zhizhen8 {
+    bottom:.33rem;
+    left:1.11rem
+}
+.air-zhizhen9,.air-zhizhen10 {
+    bottom:.38rem;
+    left:1.12rem
+}
+.air-zhizhen11,.air-zhizhen12 {
+    bottom:.40rem;
+    left:1.12rem
+}
+.air-zhizhen13,.air-zhizhen14,.air-zhizhen15,.air-zhizhen16,.air-zhizhen17,.air-zhizhen18,.air-zhizhen19,.air-zhizhen20,.air-zhizhen21,.air-zhizhen22 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-14.png);
+    left:1.13rem;
+    bottom:.42rem
+}
+.air-zhizhen15,.air-zhizhen16 {
+    bottom:.46rem;
+    left:1.14rem
+}
+.air-zhizhen17,.air-zhizhen18 {
+    bottom:.49rem;
+    left:1.14rem
+}
+.air-zhizhen19,.air-zhizhen20 {
+    bottom:.54rem;
+    left:1.15rem
+}
+.air-zhizhen21,.air-zhizhen22 {
+    bottom:.57rem;
+    left:1.16rem
+}
+.air-zhizhen23,.air-zhizhen24,.air-zhizhen25,.air-zhizhen26,.air-zhizhen27,.air-zhizhen28,.air-zhizhen29,.air-zhizhen30 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu.png);
+    width:.22rem;
+    height:.17rem;
+    bottom:.60rem;
+    left:1.17rem
+}
+.air-zhizhen25,.air-zhizhen26 {
+    bottom:.63rem;
+    left:1.18rem
+}
+.air-zhizhen27,.air-zhizhen28 {
+    bottom:.67rem;
+    left:1.19rem
+}
+.air-zhizhen29,.air-zhizhen30 {
+    bottom:.71rem;
+    left:1.2rem
+}
+.air-zhizhen31,.air-zhizhen32,.air-zhizhen33,.air-zhizhen34,.air-zhizhen35,.air-zhizhen36,.air-zhizhen37,.air-zhizhen38 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-38.png);
+    width:.23rem;
+    height:.18rem;
+    bottom:.82rem;
+    left:1.24rem
+}
+.air-zhizhen31,.air-zhizhen32 {
+    bottom:.75rem;
+    left:1.22rem
+}
+.air-zhizhen33,.air-zhizhen34 {
+    bottom:.79rem;
+    left:1.23rem
+}
+.air-zhizhen35,.air-zhizhen36 {
+    bottom:.81rem;
+    left:1.24rem
+}
+.air-zhizhen37,.air-zhizhen38 {
+    bottom:.85rem;
+    left:1.25rem
+}
+.air-zhizhen39,.air-zhizhen40,.air-zhizhen41,.air-zhizhen42,.air-zhizhen43,.air-zhizhen44,.air-zhizhen45,.air-zhizhen46,.air-zhizhen47,.air-zhizhen48 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-39.png);
+    width:.24rem;
+    height:.19rem;
+    bottom:.88rem;
+    left:1.27rem
+}
+.air-zhizhen41,.air-zhizhen42 {
+    bottom:.92rem;
+    left:1.29rem
+}
+.air-zhizhen43,.air-zhizhen44 {
+    bottom:.96rem;
+    left:1.31rem
+}
+.air-zhizhen45,.air-zhizhen46 {
+    bottom:.99rem;
+    left:1.33rem
+}
+.air-zhizhen47,.air-zhizhen48 {
+    bottom:1.03rem;
+    left:1.35rem
+}
+.air-zhizhen49,.air-zhizhen50,.air-zhizhen51,.air-zhizhen52,.air-zhizhen53,.air-zhizhen54,.air-zhizhen55,.air-zhizhen56,.air-zhizhen57,.air-zhizhen58,.air-zhizhen59,.air-zhizhen60 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-50.png);
+    bottom:1.04rem;
+    left:1.37rem;
+    width:.25rem;
+    height:.22rem
+}
+.air-zhizhen51,.air-zhizhen52 {
+    bottom:1.08rem;
+    left:1.4rem
+}
+.air-zhizhen53,.air-zhizhen54 {
+    bottom:1.11rem;
+    left:1.42rem
+}
+.air-zhizhen55,.air-zhizhen56 {
+    bottom:1.14rem;
+    left:1.44rem
+}
+.air-zhizhen57,.air-zhizhen58 {
+    bottom:1.16rem;
+    left:1.45rem
+}
+.air-zhizhen59,.air-zhizhen60 {
+    bottom:1.18rem;
+    left:1.48rem
+}
+.air-zhizhen61,.air-zhizhen62,.air-zhizhen63,.air-zhizhen64,.air-zhizhen65,.air-zhizhen66,.air-zhizhen67,.air-zhizhen68,.air-zhizhen69,.air-zhizhen70 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-60.png);
+    width:.23rem;
+    height:.22rem
+}
+.air-zhizhen61,.air-zhizhen62 {
+    bottom:1.21rem;
+    left:1.5rem
+}
+.air-zhizhen63,.air-zhizhen64 {
+    bottom:1.24rem;
+    left:1.53rem
+}
+.air-zhizhen65,.air-zhizhen66 {
+    bottom:1.27rem;
+    left:1.56rem
+}
+.air-zhizhen67,.air-zhizhen68 {
+    bottom:1.29rem;
+    left:1.57rem
+}
+.air-zhizhen69,.air-zhizhen70 {
+    bottom:1.31rem;
+    left:1.59rem
+}
+.air-zhizhen71,.air-zhizhen72,.air-zhizhen73,.air-zhizhen74,.air-zhizhen75,.air-zhizhen76,.air-zhizhen77,.air-zhizhen78,.air-zhizhen79,.air-zhizhen80 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-75.png);
+    width:.22rem;
+    height:.22rem
+}
+.air-zhizhen71,.air-zhizhen72 {
+    top:1.48rem;
+    left:1.61rem
+}
+.air-zhizhen73,.air-zhizhen74 {
+    top:1.46rem;
+    left:1.63rem
+}
+.air-zhizhen75,.air-zhizhen76 {
+    top:1.43rem;
+    left:1.66rem
+}
+.air-zhizhen77,.air-zhizhen78 {
+    top:1.4rem;
+    left:1.69rem
+}
+.air-zhizhen79,.air-zhizhen80 {
+    top:1.37rem;
+    left:1.72rem
+}
+.air-zhizhen81,.air-zhizhen82,.air-zhizhen83,.air-zhizhen84,.air-zhizhen85,.air-zhizhen86,.air-zhizhen87,.air-zhizhen88,.air-zhizhen89,.air-zhizhen90 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-85.png);
+    width:.21rem;
+    height:.23rem
+}
+.air-zhizhen81,.air-zhizhen82 {
+    top:1.35rem;
+    left:1.75rem
+}
+.air-zhizhen83,.air-zhizhen84 {
+    top:1.32rem;
+    left:1.78rem
+}
+.air-zhizhen85,.air-zhizhen86 {
+    top:1.3rem;
+    left:1.8rem
+}
+.air-zhizhen87,.air-zhizhen88 {
+    top:1.29rem;
+    left:1.82rem
+}
+.air-zhizhen89,.air-zhizhen90 {
+    top:1.27rem;
+    left:1.86rem
+}
+.air-zhizhen91,.air-zhizhen92,.air-zhizhen93,.air-zhizhen94,.air-zhizhen95,.air-zhizhen96,.air-zhizhen97,.air-zhizhen98,.air-zhizhen99,.air-zhizhen100,.air-zhizhen101,.air-zhizhen102,.air-zhizhen103,.air-zhizhen104,.air-zhizhen105,.air-zhizhen106,.air-zhizhen107,.air-zhizhen108 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-100.png);
+    width:.18rem;
+    height:.24rem
+}
+.air-zhizhen91,.air-zhizhen92 {
+    top:1.24rem;
+    left:1.89rem
+}
+.air-zhizhen93,.air-zhizhen94 {
+    top:1.22rem;
+    left:1.91rem
+}
+.air-zhizhen95,.air-zhizhen96 {
+    top:1.20rem;
+    left:1.94rem
+}
+.air-zhizhen97,.air-zhizhen98 {
+    top:1.18rem;
+    left:1.98rem
+}
+.air-zhizhen99,.air-zhizhen100 {
+    top:1.15rem;
+    left:2.03rem
+}
+.air-zhizhen101,.air-zhizhen102 {
+    top:1.14rem;
+    left:2.06rem
+}
+.air-zhizhen103,.air-zhizhen104 {
+    top:1.12rem;
+    left:2.1rem
+}
+.air-zhizhen105,.air-zhizhen106 {
+    top:1.1rem;
+    left:2.14rem
+}
+.air-zhizhen107,.air-zhizhen108 {
+    top:1.08rem;
+    left:2.18rem
+}
+.air-zhizhen109,.air-zhizhen110,.air-zhizhen111,.air-zhizhen112,.air-zhizhen113,.air-zhizhen114,.air-zhizhen115,.air-zhizhen116,.air-zhizhen117,.air-zhizhen118,.air-zhizhen119,.air-zhizhen120 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-110.png);
+    width:.2rem;
+    height:.25rem
+}
+.air-zhizhen109,.air-zhizhen110 {
+    top:1.06rem;
+    left:2.19rem
+}
+.air-zhizhen111,.air-zhizhen112 {
+    top:1.05rem;
+    left:2.23rem
+}
+.air-zhizhen113,.air-zhizhen114 {
+    top:1.03rem;
+    left:2.27rem
+}
+.air-zhizhen115,.air-zhizhen116 {
+    top:1.02rem;
+    left:2.3rem
+}
+.air-zhizhen117,.air-zhizhen118 {
+    top:1.01rem;
+    left:2.33rem
+}
+.air-zhizhen119,.air-zhizhen120 {
+    top:.99rem;
+    left:2.39rem
+}
+.air-zhizhen121,.air-zhizhen122,.air-zhizhen123,.air-zhizhen124,.air-zhizhen125,.air-zhizhen126,.air-zhizhen127,.air-zhizhen128,.air-zhizhen129,.air-zhizhen130 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-125.png);
+    width:.19rem;
+    height:.24rem
+}
+.air-zhizhen121,.air-zhizhen122 {
+    top:.99rem;
+    left:2.39rem
+}
+.air-zhizhen123,.air-zhizhen124 {
+    top:.98rem;
+    left:2.44rem
+}
+.air-zhizhen125,.air-zhizhen126 {
+    top:.97rem;
+    left:2.48rem
+}
+.air-zhizhen127,.air-zhizhen128 {
+    top:.96rem;
+    left:2.52rem
+}
+.air-zhizhen129,.air-zhizhen130 {
+    top:.95rem;
+    left:2.55rem
+}
+.air-zhizhen131,.air-zhizhen132,.air-zhizhen133,.air-zhizhen134,.air-zhizhen135,.air-zhizhen136,.air-zhizhen137,.air-zhizhen138,.air-zhizhen139,.air-zhizhen140,.air-zhizhen141,.air-zhizhen142,.air-zhizhen143,.air-zhizhen144 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-135.png);
+    width:.2rem;
+    height:.24rem
+}
+.air-zhizhen131,.air-zhizhen132 {
+    top:.95rem;
+    left:2.54rem
+}
+.air-zhizhen133,.air-zhizhen134 {
+    top:.94rem;
+    left:2.58rem
+}
+.air-zhizhen135,.air-zhizhen136 {
+    top:.94rem;
+    left:2.62rem
+}
+.air-zhizhen137,.air-zhizhen138 {
+    top:.93rem;
+    left:2.66rem
+}
+.air-zhizhen139,.air-zhizhen140 {
+    top:.93rem;
+    left:2.69rem
+}
+.air-zhizhen141,.air-zhizhen142 {
+    top:.92rem;
+    left:2.74rem
+}
+.air-zhizhen143,.air-zhizhen144 {
+    top:.92rem;
+    left:2.78rem
+}
+.air-zhizhen145,.air-zhizhen146,.air-zhizhen147,.air-zhizhen148,.air-zhizhen149,.air-zhizhen150,.air-zhizhen151,.air-zhizhen152,.air-zhizhen153,.air-zhizhen154,.air-zhizhen155,.air-zhizhen156 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-150.png);
+    width:.2rem;
+    height:.23rem
+}
+.air-zhizhen145,.air-zhizhen146 {
+    top:.93rem;
+    left:2.78rem
+}
+.air-zhizhen147,.air-zhizhen148 {
+    top:.93rem;
+    left:2.8rem
+}
+.air-zhizhen149,.air-zhizhen150 {
+    top:.93rem;
+    left:2.85rem
+}
+.air-zhizhen151,.air-zhizhen152 {
+    top:.93rem;
+    left:2.88rem
+}
+.air-zhizhen153,.air-zhizhen154 {
+    top:.93rem;
+    left:2.92rem
+}
+.air-zhizhen155,.air-zhizhen156 {
+    top:.93rem;
+    left:2.94rem
+}
+.air-zhizhen157,.air-zhizhen158,.air-zhizhen159,.air-zhizhen160,.air-zhizhen161,.air-zhizhen162,.air-zhizhen163,.air-zhizhen164,.air-zhizhen165,.air-zhizhen166,.air-zhizhen167,.air-zhizhen168 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-165.png);
+    width:.2rem;
+    height:.25rem
+}
+.air-zhizhen157,.air-zhizhen158 {
+    top:.94rem;
+    left:2.97rem
+}
+.air-zhizhen159,.air-zhizhen160 {
+    top:.94rem;
+    left:3.01rem
+}
+.air-zhizhen161,.air-zhizhen162 {
+    top:.95rem;
+    left:3.05rem
+}
+.air-zhizhen163,.air-zhizhen164 {
+    top:.95rem;
+    left:3.08rem
+}
+.air-zhizhen165,.air-zhizhen166 {
+    top:.95rem;
+    left:3.10rem
+}
+.air-zhizhen167,.air-zhizhen168 {
+    top:.96rem;
+    left:3.15rem
+}
+.air-zhizhen169,.air-zhizhen170,.air-zhizhen171,.air-zhizhen172,.air-zhizhen173,.air-zhizhen174,.air-zhizhen175,.air-zhizhen176,.air-zhizhen177,.air-zhizhen178,.air-zhizhen179,.air-zhizhen180,.air-zhizhen181,.air-zhizhen182,.air-zhizhen183,.air-zhizhen184 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-175.png);
+    width:.2rem;
+    height:.25rem
+}
+.air-zhizhen169,.air-zhizhen170 {
+    top:.97rem;
+    left:3.19rem
+}
+.air-zhizhen171,.air-zhizhen172 {
+    top:.98rem;
+    left:3.21rem
+}
+.air-zhizhen173,.air-zhizhen174 {
+    top:.98rem;
+    left:3.24rem
+}
+.air-zhizhen175,.air-zhizhen176 {
+    top:.99rem;
+    left:3.27rem
+}
+.air-zhizhen177,.air-zhizhen178 {
+    top:1rem;
+    left:3.3rem
+}
+.air-zhizhen179,.air-zhizhen180 {
+    top:1.02rem;
+    left:3.34rem
+}
+.air-zhizhen181,.air-zhizhen182 {
+    top:1.03rem;
+    left:3.37rem
+}
+.air-zhizhen183,.air-zhizhen184 {
+    top:1.04rem;
+    left:3.40rem
+}
+.air-zhizhen185,.air-zhizhen186,.air-zhizhen187,.air-zhizhen188,.air-zhizhen189,.air-zhizhen190,.air-zhizhen191,.air-zhizhen192 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-190.png);
+    width:.2rem;
+    height:.25rem
+}
+.air-zhizhen185,.air-zhizhen186 {
+    top:1.06rem;
+    left:3.43rem
+}
+.air-zhizhen187,.air-zhizhen188 {
+    top:1.07rem;
+    left:3.46rem
+}
+.air-zhizhen189,.air-zhizhen190 {
+    top:1.09rem;
+    left:3.51rem
+}
+.air-zhizhen191,.air-zhizhen192 {
+    top:1.11rem;
+    left:3.55rem
+}
+.air-zhizhen193,.air-zhizhen194,.air-zhizhen195,.air-zhizhen196,.air-zhizhen197,.air-zhizhen198 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-195.png);
+    width:.2rem;
+    height:.25rem
+}
+.air-zhizhen193,.air-zhizhen194 {
+    top:1.12rem;
+    left:3.58rem
+}
+.air-zhizhen195,.air-zhizhen196 {
+    top:1.14rem;
+    left:3.62rem
+}
+.air-zhizhen197,.air-zhizhen198 {
+    top:1.15rem;
+    left:3.64rem
+}
+.air-zhizhen199 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-200.png);
+    top:1.16rem;
+    left:3.63rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen200 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-200.png);
+    top:1.17rem;
+    left:3.64rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen201,.air-zhizhen202,.air-zhizhen203,.air-zhizhen204,.air-zhizhen205 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-200.png);
+    top:1.19rem;
+    left:3.68rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen206,.air-zhizhen207,.air-zhizhen208,.air-zhizhen209,.air-zhizhen210 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-200.png);
+    top:1.22rem;
+    left:3.72rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen211,.air-zhizhen212,.air-zhizhen213,.air-zhizhen214,.air-zhizhen215 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-225.png);
+    top:1.26rem;
+    left:3.77rem;
+    width:.21rem;
+    height:.23rem
+}
+.air-zhizhen216,.air-zhizhen217,.air-zhizhen218,.air-zhizhen219,.air-zhizhen220 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-225.png);
+    top:1.27rem;
+    left:3.79rem;
+    width:.21rem;
+    height:.23rem
+}
+.air-zhizhen221,.air-zhizhen222,.air-zhizhen223,.air-zhizhen224,.air-zhizhen225 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-225.png);
+    top:1.31rem;
+    left:3.84rem;
+    width:.21rem;
+    height:.23rem
+}
+.air-zhizhen226,.air-zhizhen227,.air-zhizhen228,.air-zhizhen229,.air-zhizhen230 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-225.png);
+    top:1.32rem;
+    left:3.86rem;
+    width:.21rem;
+    height:.23rem
+}
+.air-zhizhen231,.air-zhizhen232,.air-zhizhen233,.air-zhizhen234,.air-zhizhen235 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-225.png);
+    top:1.35rem;
+    left:3.89rem;
+    width:.21rem;
+    height:.23rem
+}
+.air-zhizhen236,.air-zhizhen237,.air-zhizhen238,.air-zhizhen239,.air-zhizhen240 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-250.png);
+    top:1.36rem;
+    left:3.92rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen241,.air-zhizhen242,.air-zhizhen243,.air-zhizhen244,.air-zhizhen245 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-250.png);
+    top:1.39rem;
+    left:3.95rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen246,.air-zhizhen247,.air-zhizhen248,.air-zhizhen249 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-250.png);
+    top:1.42rem;
+    left:3.98rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen250,.air-zhizhen251,.air-zhizhen252,.air-zhizhen253,.air-zhizhen254 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-250.png);
+    top:1.45rem;
+    left:4.01rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen255,.air-zhizhen256,.air-zhizhen257,.air-zhizhen258,.air-zhizhen259 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-250.png);
+    top:1.49rem;
+    left:4.05rem;
+    width:.22rem;
+    height:.24rem
+}
+.air-zhizhen260,.air-zhizhen261,.air-zhizhen262,.air-zhizhen263,.air-zhizhen264 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-265.png);
+    top:1.52rem;
+    left:4.05rem;
+    width:.24rem;
+    height:.22rem
+}
+.air-zhizhen265,.air-zhizhen266,.air-zhizhen267,.air-zhizhen268,.air-zhizhen269 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-265.png);
+    top:1.57rem;
+    left:4.09rem;
+    width:.24rem;
+    height:.22rem
+}
+.air-zhizhen270,.air-zhizhen271,.air-zhizhen272,.air-zhizhen273,.air-zhizhen274 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-275.png);
+    top:1.6rem;
+    left:4.12rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen275,.air-zhizhen276,.air-zhizhen277,.air-zhizhen278,.air-zhizhen279 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-275.png);
+    top:1.63rem;
+    left:4.14rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen280,.air-zhizhen280,.air-zhizhen282,.air-zhizhen283,.air-zhizhen284 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-275.png);
+    top:1.66rem;
+    left:4.16rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen285,.air-zhizhen286,.air-zhizhen287,.air-zhizhen288,.air-zhizhen289 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-275.png);
+    top:1.69rem;
+    left:4.19rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen290,.air-zhizhen290,.air-zhizhen292,.air-zhizhen293,.air-zhizhen294 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-275.png);
+    top:1.72rem;
+    left:4.21rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen295,.air-zhizhen296,.air-zhizhen297,.air-zhizhen298,.air-zhizhen299 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-275.png);
+    top:1.75rem;
+    left:4.23rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen300,.air-zhizhen301,.air-zhizhen302,.air-zhizhen303,.air-zhizhen304 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-300.png);
+    top:1.79rem;
+    left:4.25rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen305,.air-zhizhen306,.air-zhizhen307,.air-zhizhen308,.air-zhizhen309 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-300.png);
+    top:1.81rem;
+    left:4.26rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen310,.air-zhizhen311,.air-zhizhen312,.air-zhizhen313,.air-zhizhen314 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-300.png);
+    top:1.83rem;
+    left:4.27rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen315,.air-zhizhen316,.air-zhizhen317,.air-zhizhen318,.air-zhizhen319 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-300.png);
+    top:1.84rem;
+    left:4.28rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen320,.air-zhizhen321,.air-zhizhen322,.air-zhizhen323,.air-zhizhen324 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-300.png);
+    top:1.86rem;
+    left:4.29rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen325,.air-zhizhen326,.air-zhizhen327,.air-zhizhen328,.air-zhizhen329 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-300.png);
+    top:1.88rem;
+    left:4.3rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen330,.air-zhizhen331,.air-zhizhen332,.air-zhizhen333,.air-zhizhen334 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-300.png);
+    top:1.91rem;
+    left:4.32rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen335,.air-zhizhen336,.air-zhizhen337,.air-zhizhen338,.air-zhizhen339 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-335.png);
+    top:1.94rem;
+    left:4.34rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen340,.air-zhizhen341,.air-zhizhen342,.air-zhizhen343,.air-zhizhen344 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-335.png);
+    top:1.97rem;
+    left:4.35rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen345,.air-zhizhen346,.air-zhizhen347,.air-zhizhen348,.air-zhizhen349 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-350.png);
+    top:2rem;
+    left:4.37rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen350,.air-zhizhen351,.air-zhizhen352,.air-zhizhen353,.air-zhizhen354 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-350.png);
+    top:2.02rem;
+    left:4.38rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen355,.air-zhizhen356,.air-zhizhen357,.air-zhizhen358,.air-zhizhen359 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-350.png);
+    top:2.04rem;
+    left:4.39rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen360,.air-zhizhen361,.air-zhizhen362,.air-zhizhen363,.air-zhizhen364 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-350.png);
+    top:2.06rem;
+    left:4.4rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen365,.air-zhizhen366,.air-zhizhen367,.air-zhizhen368,.air-zhizhen369 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-350.png);
+    top:2.08rem;
+    left:4.41rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen370,.air-zhizhen371,.air-zhizhen372,.air-zhizhen373,.air-zhizhen374 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-350.png);
+    top:2.1rem;
+    left:4.41rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen375,.air-zhizhen376,.air-zhizhen377,.air-zhizhen378,.air-zhizhen379 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-350.png);
+    top:2.12rem;
+    left:4.42rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen380,.air-zhizhen381,.air-zhizhen382,.air-zhizhen383,.air-zhizhen384 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-350.png);
+    top:2.13rem;
+    left:4.42rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen385,.air-zhizhen386,.air-zhizhen387,.air-zhizhen388,.air-zhizhen389 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-400.png);
+    top:2.14rem;
+    left:4.43rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen390,.air-zhizhen391,.air-zhizhen392,.air-zhizhen393,.air-zhizhen394 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-400.png);
+    top:2.16rem;
+    left:4.44rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen395,.air-zhizhen396,.air-zhizhen397,.air-zhizhen398,.air-zhizhen399 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-400.png);
+    top:2.18rem;
+    left:4.45rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen400,.air-zhizhen401,.air-zhizhen402,.air-zhizhen403,.air-zhizhen404 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-400.png);
+    top:2.2rem;
+    left:4.45rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen405,.air-zhizhen406,.air-zhizhen407,.air-zhizhen408,.air-zhizhen409 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-400.png);
+    top:2.22rem;
+    left:4.46rem;
+    width:.24rem;
+    height:.20rem
+}
+.air-zhizhen410,.air-zhizhen411,.air-zhizhen412,.air-zhizhen413,.air-zhizhen414 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.56rem;
+    left:4.48rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen415,.air-zhizhen416,.air-zhizhen417,.air-zhizhen418,.air-zhizhen419 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.54rem;
+    left:4.49rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen420,.air-zhizhen421,.air-zhizhen422,.air-zhizhen423,.air-zhizhen424 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.52rem;
+    left:4.49rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen425,.air-zhizhen426,.air-zhizhen427,.air-zhizhen428,.air-zhizhen429 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.5rem;
+    left:4.49rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen430,.air-zhizhen431,.air-zhizhen432,.air-zhizhen433,.air-zhizhen434 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.48rem;
+    left:4.5rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen435,.air-zhizhen436,.air-zhizhen437,.air-zhizhen438,.air-zhizhen439 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.46rem;
+    left:4.5rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen440,.air-zhizhen441,.air-zhizhen442,.air-zhizhen443,.air-zhizhen444 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.44rem;
+    left:4.5rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen445,.air-zhizhen446,.air-zhizhen447,.air-zhizhen448,.air-zhizhen449 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.42rem;
+    left:4.51rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen450,.air-zhizhen451,.air-zhizhen452,.air-zhizhen453,.air-zhizhen454 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.4rem;
+    left:4.51rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen455,.air-zhizhen456,.air-zhizhen457,.air-zhizhen458,.air-zhizhen459 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-450.png);
+    bottom:.38rem;
+    left:4.51rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen460,.air-zhizhen461,.air-zhizhen462,.air-zhizhen463,.air-zhizhen464 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-470.png);
+    bottom:.36rem;
+    left:4.52rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen465,.air-zhizhen466,.air-zhizhen467,.air-zhizhen468,.air-zhizhen469 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-470.png);
+    bottom:.34rem;
+    left:4.52rem;
+    width:.23rem;
+    height:.19rem
+}
+.air-zhizhen470,.air-zhizhen471,.air-zhizhen472,.air-zhizhen473,.air-zhizhen474 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-470.png);
+    bottom:.33rem;
+    left:4.52rem;
+    width:.24rem;
+    height:.2rem
+}
+.air-zhizhen475,.air-zhizhen476,.air-zhizhen477,.air-zhizhen478,.air-zhizhen479 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-470.png);
+    bottom:.28rem;
+    left:4.52rem;
+    width:.24rem;
+    height:.2rem
+}
+.air-zhizhen480,.air-zhizhen481,.air-zhizhen482,.air-zhizhen483,.air-zhizhen484 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-500.png);
+    bottom:.26rem;
+    left:4.53rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen485,.air-zhizhen486,.air-zhizhen487,.air-zhizhen488,.air-zhizhen489 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-500.png);
+    bottom:.23rem;
+    left:4.53rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen490,.air-zhizhen491,.air-zhizhen492,.air-zhizhen493,.air-zhizhen494,.air-zhizhen495 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-500.png);
+    bottom:.22rem;
+    left:4.53rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-zhizhen496,.air-zhizhen497,.air-zhizhen498,.air-zhizhen499,.air-zhizhen500 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/icon-zhishu-500.png);
+    bottom:.19rem;
+    left:4.53rem;
+    width:.23rem;
+    height:.2rem
+}
+.air-box {
+    margin:.09rem .09rem 0;
+    background:#fff
+}
+.air-box-cont {
+    padding:0 .16rem
+}
+h2.air-title {
+    font-size:.3rem;
+    display:block;
+    height:.88rem;
+    line-height:.88rem;
+    overflow:hidden;
+    padding:0 .15rem;
+    color:#000
+}
+.air-see {
+    border:1px solid #ddd;
+    color:#888;
+    width:1.95rem;
+    height:.44rem;
+    line-height:.44rem;
+    overflow:hidden;
+    text-align:center;
+    font-size:.21rem;
+    text-align:center;
+    margin-top:.22rem;
+    border-radius:8px
+}
+.air-wuran-cont {
+    border-top:1px solid #b2b2b2
+}
+.air-wuran-list {
+    height:1.45rem;
+    clear:bboth;
+    overflow:hidden;
+    position:relative;
+    border-bottom:1px solid #b2b2b2
+}
+.air-wuran-list dl {
+    float:left;
+    width:50%;
+    padding-top:.3rem;
+    height:1.15rem;
+    overflow:hidden;
+    clear:both
+}
+.air-wuran-list dl.air-wuran-even {
+    position:absolute;
+    right:0;
+    border-left:1px solid #d2d2d2;
+    z-index:1
+}
+.air-wuran-list dl dt {
+    float:left;
+    width:.86rem;
+    height:.86rem;
+    line-height:.86rem;
+    border-radius:1rem;
+    background:#2b93e0;
+    color:#fff;
+    font-size:.32rem;
+    text-align:center;
+    margin-left:.15rem
+}
+.air-wuran-list dl dd {
+    font-size:.24rem;
+    float:right;
+    width:1.67rem;
+    line-height:.3rem;
+    color:#888;
+    padding-top:.12rem
+}
+.air-wuran-list dl.air-wuran-even dt {
+    margin-left:.3rem
+}
+.air-wuran-list dl.air-wuran-even dd {
+    width:1.52rem
+}
+.air-wuran-xiangxi {
+    height:.82rem;
+    line-height:.82rem;
+    overflow:hidden;
+    color:#b2b2b2;
+    font-size:.22rem
+}
+.air-wuran-xiangxi span {
+    padding-left:.17rem
+}
+.air-forecast-title {
+    height:.87rem;
+    background:#2b93e0;
+    color:#fff;
+    line-height:.87rem;
+    text-align:center;
+    font-size:.3rem
+}
+.air-forecast-title p {
+    float:left;
+    width:50%;
+    height:.87rem
+}
+.air-forecast-title p.air-tabon {
+    background:#2880dd
+}
+.air-forecast-cont {
+    min-height:4.4rem;
+    overflow:hidden;
+    margin-bottom:.08rem
+}
+#air-quality .air-box-cont {
+    padding:.08rem;
+    height:4.5rem;
+    overflow:hidden
+}
+#air-live {
+    width:100%;
+    background:#2880dd;
+    height:4.4rem;
+    overflow:hidden;
+    clear:both;
+    color:#fff;
+    position:relative
+}
+.air-shuxian {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:2
+}
+.air-shuxian img {
+    display:block;
+    width:100%
+}
+.air-week {
+    padding-top:.4rem;
+    padding-left:.17rem
+}
+.air-data {
+    padding-left:.17rem;
+    height:.7rem;
+    color:#fff
+}
+.air-week-data {
+    float:left;
+    width:1.15rem;
+    font-size:.25rem;
+    text-align:center
+}
+.air-data table {
+    text-align:center
+}
+.air-data table td {
+    width:1.15rem;
+    text-align:center;
+    border:0
+}
+#air-shikuang {
+    margin:.23rem auto 0rem;
+    height:.58rem;
+    width:5.49rem;
+    clear:both;
+    overflow:hidden;
+    background:#b2b2b2;
+    position:relative
+}
+#air-shikuang li {
+    float:left;
+    width:1.83rem;
+    text-align:center;
+    height:.58rem;
+    line-height:.58rem;
+    color:#fff;
+    font-size:.24rem;
+    cursor:pointer
+}
+#air-shikuang li.air-tabon {
+    background:#888
+}
+.air-shikuang-cont {
+    width:110%;
+    height:380px;
+    margin-left:-5%;
+    display:none
+}
+.air-map-cont {
+    width:6.22rem;
+    height:3.79rem;
+    overflow:hidden
+}
+@media screen and (min-width:640px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:380px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:280px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:200px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:200px;
+    margin-top:-25%
+}
+.weather-down {
+    margin-top:-5%
+}
+}
+@media screen and (min-width:541px) and (max-width:640px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:380px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:280px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:200px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:200px;
+    margin-top:-25%
+}
+.weather-down {
+    margin-top:-5%
+}
+}
+@media screen and (min-width:501px) and (max-width:540px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:380px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:280px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:170px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:170px;
+    margin-top:-25%
+}
+.weather-down {
+    margin-top:-6%
+}
+}
+@media screen and (min-width:481px) and (max-width:500px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:350px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:250px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:170px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:170px;
+    margin-top:-25%
+}
+.weather-down {
+    margin-top:-6%
+}
+}
+@media screen and (min-width:461px) and (max-width:480px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:340px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:240px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:170px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:170px;
+    margin-top:-25%
+}
+.weather-down {
+    margin-top:-6%
+}
+}
+@media screen and (min-width:441px) and (max-width:460px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:330px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:330px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:165px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:165px;
+    margin-top:-25%
+}
+.weather-down {
+    margin-top:-6%
+}
+}
+@media screen and (min-width:421px) and (max-width:440px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:320px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:220px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:170px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:170px;
+    margin-top:-27%
+}
+.weather-down {
+    margin-top:-5%
+}
+}
+@media screen and (min-width:381px) and (max-width:420px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:310px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:210px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:170px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:170px;
+    margin-top:-30%
+}
+.weather-down {
+    margin-top:-8%
+}
+}
+@media screen and (min-width:361px) and (max-width:380px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:285px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:185px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:150px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:150px;
+    margin-top:-30%
+}
+.weather-down {
+    margin-top:-3%
+}
+}
+@media screen and (min-width:341px) and (max-width:360px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:280px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:180px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:140px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:140px;
+    margin-top:-30%
+}
+.weather-down {
+    margin-top:-4%
+}
+}
+@media screen and (min-width:320px) and (max-width:340px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:250px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:150px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:140px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:140px;
+    margin-top:-30%
+}
+.weather-down {
+    margin-top:-5%
+}
+.weather-three li span {
+    letter-spacing:0
+}
+}
+@media screen and (min-width:0) and (max-width:320px) {
+    .air-shikuang-cont {
+    width:100%;
+    height:250px;
+    margin-left:0;
+    margin-top:-10%
+}
+#air-forecastSVG,#yuce {
+    height:150px;
+    width:98%;
+    margin:0
+}
+#weather-container1 {
+    height:140px;
+    margin-top:-16%
+}
+#weather-container2 {
+    height:140px;
+    margin-top:-30%
+}
+.weather-down {
+    margin-top:-6%
+}
+.weather-three li span {
+    letter-spacing:0
+}
+}.air-index-title {
+    height:.62rem;
+    line-height:.62rem;
+    background:#2b93e0;
+    text-align:center;
+    color:#fff;
+    font-size:.26rem;
+    overflow:hidden;
+    clear:both;
+    font-size:.26rem
+}
+.air-index-title li {
+    float:left;
+    width:.89rem
+}
+.air-index-title li.air-width {
+    width:.88rem
+}
+.air-index-title li.air-tabon {
+    background:#287fdd
+}
+.air-index-cont {
+    display:none;
+    padding:0 .16rem
+}
+.air-index-cont li {
+    height:.84rem;
+    line-height:.84rem;
+    border-bottom:1px solid #b2b2b2;
+    padding:0 .15rem;
+    overflow:hidden;
+    clear:both;
+    font-size:.26rem;
+    color:#888
+}
+.air-index-cont li p {
+    float:left;
+    width:4rem
+}
+.air-index-cont li em {
+    float:left;
+    width:.56rem;
+    height:.32rem;
+    line-height:.32rem;
+    border-radius:6px;
+    background:#2b93e0;
+    text-align:center;
+    margin-top:.26rem;
+    color:#fff;
+    font-size:.22rem
+}
+.air-index-cont li span {
+    float:right
+}
+.air-index-more {
+    margin-top:.3rem;
+    height:.75rem;
+    overflow:hidden;
+    text-align:center
+}
+.air-index-more a {
+    display:inline-block;
+    width:1.97rem;
+    height:.45rem;
+    line-height:.45rem;
+    text-align:center;
+    color:#fff;
+    font-size:.24rem;
+    background:#287fdd;
+    font-weight:800
+}
+#air-aqi {
+    margin-top:0
+}
+#air-aqi .air-box-cont {
+    padding:0 .09rem
+}
+.air-aqi-title {
+    display:block;
+    font-size:.3rem;
+    height:.92rem;
+    line-height:.92rem;
+    overflow:hidden;
+    text-align:center;
+    color:#000
+}
+#air-aqi-tab {
+    height:.7rem;
+    background:#2b93e0;
+    color:#fff;
+    font-size:.24rem
+}
+#air-aqi-tab li {
+    float:left;
+    width:25%;
+    height:.7rem;
+    line-height:.7rem;
+    overflow:hidden;
+    text-align:center
+}
+#air-aqi-tab li.air-tabon {
+    background:#287fdd
+}
+#air-aqi-tab li a {
+    color:#fff
+}
+.air-aqi-tr {
+    height:.7rem;
+    line-height:.7rem;
+    overflow:hidden;
+    text-align:center;
+    color:#888;
+    font-size:.26rem;
+    background:#ebebeb
+}
+.air-aqi-tr p {
+    float:left
+}
+.air-aqi-cont {
+    display:none
+}
+.air-aqi-cont li {
+    height:.55rem;
+    line-height:.55rem;
+    overflow:hidden;
+    text-align:center;
+    color:#888;
+    font-size:.26rem
+}
+.air-aqi-cont li p {
+    float:left
+}
+.air-num-1 {
+    width:1rem
+}
+.air-num-2 {
+    width:1.79rem;
+    color:#b2b2b2
+}
+.air-num-3 {
+    width:1.79rem;
+    color:#b2b2b2
+}
+.air-num-4 {
+    width:1.46rem
+}
+.air-aqi-mess {
+    height:.82rem;
+    line-height:.82rem;
+    overflow:hidden;
+    text-align:right;
+    font-size:.21rem;
+    border-top:1px solid #b2b2b2;
+    margin:.12rem .09rem;
+    padding:0 .1rem
+}
+.air-city-quality {
+    overflow:hidden;
+    height:4.32rem;
+    padding-bottom:.12rem
+}
+.air-city-quality img {
+    width:100%
+}
+.air-meteorological-cont {
+    display:none
+}
+.air-meteorological-title {
+    height:.7rem;
+    line-height:.7rem;
+    overflow:hidden;
+    font-size:.24rem;
+    text-align:center;
+    background:#2b93e0;
+    clear:both;
+    margin-bottom:.1rem
+}
+.air-meteorological-title p {
+    float:left;
+    width:50%;
+    color:#fff
+}
+.air-meteorological-title p.air-tabon {
+    background:#287fdd
+}
+.air-meteorological-title p i.weatherfont {
+    font-size:.22rem;
+    margin-left:.1rem;
+    font-weight:normal
+}
+.air-meteorological-map {
+    width:6.04rem;
+    height:4.88rem;
+    overflow:hidden;
+    margin:0 auto;
+    padding-bottom:.12rem
+}
+.air-meteorological-map img {
+    display:block;
+    width:100%
+}
+#air-testing {
+    margin:.23rem auto;
+    height:.58rem;
+    width:5.49rem;
+    clear:both;
+    overflow:hidden;
+    background:#b2b2b2
+}
+#air-testing li {
+    float:left;
+    width:50%;
+    text-align:center;
+    height:.58rem;
+    line-height:.58rem;
+    color:#fff;
+    font-size:.24rem;
+    cursor:pointer
+}
+#air-testing li.air-one {
+    width:30%
+}
+#air-testing li.air-three {
+    width:40%
+}
+#air-testing li.air-tabon {
+    background:#888
+}
+.meteorological-map {
+    display:none
+}
+#air-warning {
+    margin:.23rem auto;
+    height:.58rem;
+    width:5.49rem;
+    clear:both;
+    overflow:hidden;
+    background:#b2b2b2
+}
+#air-warning li {
+    float:left;
+    text-align:center;
+    height:.58rem;
+    line-height:.58rem;
+    color:#fff;
+    font-size:.24rem;
+    cursor:pointer
+}
+#air-warning li.air-one {
+    width:19%
+}
+#air-warning li.air-two {
+    width:24%
+}
+#air-warning li.air-six {
+    width:38%
+}
+#air-warning li.air-tabon {
+    background:#888
+}
+.air-warning {
+    display:none
+}
+.video-box {
+    margin:0 .09rem .09rem;
+    padding:.09rem;
+    background:#fff;
+    position:relative;
+    overflow:hidden;
+    clear:both
+}
+.video-box-nav {
+    height:.7rem;
+    line-height:.7rem;
+    overflow:hidden;
+    font-size:.3rem
+}
+.weather-nav-all {
+    height:auto;
+    line-height:.44rem;
+    padding:.1rem 0
+}
+#weather-nav a {
+    color:#000
+}
+.weather-nav-cont {
+    float:left;
+    width:5.5rem;
+    text-align:center;
+    overflow:hidden;
+    clear:both
+}
+.weather-nav-cont a {
+    float:left;
+    font-weight:bold;
+    padding:0 .15rem;
+    white-space:normal
+}
+.weather-nav-all .weather-nav-cont {
+    width:100%
+}
+.video-down {
+    float:left;
+    position:absolute;
+    right:.3rem;
+    top:.06rem
+}
+.video-down .icon-xiangxia1 {
+    font-size:.32rem
+}
+.video-up .icon-xiangshang1 {
+    font-size:.32rem
+}
+.video-up {
+    float:left;
+    position:absolute;
+    right:.3rem;
+    bottom:.1rem
+}
+#weatherVideo #video-nav {
+    display:none
+}
+#weatherVideo .weather-nav-cont {
+    width:100%
+}
+#weatherVideo .weather-nav-cont a {
+    padding:0;
+    width:25%;
+    text-align:center
+}
+#video-video {
+    height:3.23rem;
+    width:100%
+}
+.video-video-li {
+    width:100%;
+    height:3.23rem;
+    overflow:hidden;
+    position:relative
+}
+.video-video-li i img {
+    display:block;
+    width:100%;
+    height:3.23rem
+}
+.video-video-li b {
+    display:block;
+    width:1.18rem;
+    height:1.22rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-0.59rem;
+    margin-top:-0.61rem;
+    z-index:1;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/video-img02.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    opacity:.6
+}
+.video-video-li p {
+    height:.66rem;
+    width:100%;
+    background:rgba(0,0,0,0.4);
+    line-height:.66rem;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:1;
+    color:#fff;
+    font-size:.3rem
+}
+#video-list dl {
+    padding-top:.22rem;
+    height:.3rem;
+    margin-bottom:.22rem;
+    font-size:.26rem;
+    overflow:hidden;
+    clear:both
+}
+#video-list dl dt {
+    float:left;
+    padding-left:.2rem;
+    width:1rem;
+    height:.3rem;
+    border-right:1px solid #666
+}
+#video-list dl dd {
+    float:right;
+    width:4.4rem;
+    height:.3rem;
+    line-height:.3rem
+}
+#video-list dl dt a {
+    color:#000;
+    font-weight:bold
+}
+#video-list dl dd a {
+    color:#888;
+    font-weight:500
+}
+h2.video-title {
+    font-size:.3rem;
+    color:#000;
+    height:.78rem;
+    line-height:.78rem;
+    overflow:hidden;
+    border-bottom:1px solid #b2b2b2;
+    margin-bottom:.3rem;
+    padding-left:.15rem;
+    margin-left:.07rem;
+    margin-right:.07rem
+}
+h2.video-title a {
+    color:#000
+}
+.video-cont-list {
+    padding:0 .12rem
+}
+.video-li {
+    height:1.24rem;
+    padding:0 .1rem;
+    overflow:hidden;
+    clear:both;
+    margin-bottom:.3rem
+}
+.video-li-img {
+    float:left;
+    position:relative;
+    width:1.9rem;
+    height:1.24rem;
+    overflow:hidden
+}
+.video-li-img i img {
+    display:block;
+    width:100%;
+    height:1.24rem
+}
+.video-li-img b {
+    display:block;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/video-img03.png) top left no-repeat;
+    width:.31rem;
+    height:.32rem;
+    overflow:hidden;
+    background-size:100% 100%;
+    position:absolute;
+    left:.07rem;
+    bottom:.1rem;
+    z-index:2;
+    opacity:.6
+}
+.video-li-cont {
+    float:right;
+    width:3.5rem
+}
+.video-li-cont strong {
+    display:block;
+    font-size:.26rem;
+    color:#000
+}
+.video-li-cont strong a {
+    color:#000
+}
+.video-li-cont p {
+    margin-bottom:.03rem;
+    font-size:.22rem;
+    color:#888
+}
+.video-footer {
+    height:.25rem;
+    line-height:.25rem;
+    overflow:hidden;
+    clear:both
+}
+.video-footer time {
+    float:left;
+    width:1.39rem;
+    font-size:.22rem
+}
+.video-footer span.video-num {
+    float:left;
+    width:1.1rem
+}
+.video-num i {
+    background:url(http://i.tq121.com.cn/i/wap2016/news/video-img01.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:.17rem;
+    height:.17rem;
+    overflow:hidden;
+    float:left;
+    margin-right:.1rem;
+    margin-top:.04rem
+}
+.video-footer span.video-hot {
+    float:right;
+    width:.53rem;
+    height:.25rem;
+    background:#318acb;
+    text-align:center;
+    color:#fff;
+    font-size:.16rem
+}
+.video-more {
+    padding-top:.3rem;
+    border-top:1px solid #d2d2d2;
+    text-align:center;
+    height:.67rem;
+    margin:0 .07rem
+}
+.video-more a {
+    display:block;
+    width:1.97rem;
+    height:.46rem;
+    line-height:.46rem;
+    overflow:hidden;
+    margin:0 auto;
+    background:#287fdd;
+    color:#fff;
+    font-size:.26rem
+}
+.video-line {
+    border-top:1px solid #b2b2b2;
+    height:0;
+    width:100%
+}
+.video-bottom30 {
+    margin-bottom:.3rem
+}
+.video-column-two {
+    overflow:hidden;
+    clear:both
+}
+.video-column-li {
+    float:left;
+    width:2.7rem;
+    height:2.3rem;
+    overflow:hidden;
+    margin-left:.2rem;
+    margin-right:.05rem
+}
+.video-column-img {
+    width:2.7rem;
+    height:1.24rem;
+    overflow:hidden;
+    position:relative
+}
+.video-column-img i img {
+    display:block;
+    width:2.7rem;
+    height:1.24rem;
+    overflow:hidden
+}
+.video-column-img b {
+    display:block;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/video-img03.png) top left no-repeat;
+    width:.31rem;
+    height:.32rem;
+    overflow:hidden;
+    background-size:100% 100%;
+    position:absolute;
+    left:.07rem;
+    bottom:.1rem;
+    z-index:2;
+    opacity:.6
+}
+.video-column-txt {
+    font-size:.22rem;
+    line-height:.32rem;
+    padding-top:.2rem;
+    color:#000
+}
+.video-column-txt a {
+    color:#000
+}
+.air-txt-title {
+    text-align:center;
+    font-size:.3rem;
+    padding:.25rem 0;
+    color:#000
+}
+.air-txt-fb {
+    font-size:.22rem;
+    color:#9e9e9f;
+    text-align:center;
+    margin-bottom:.3rem
+}
+.air-txt-fb .video-num i {
+    float:none;
+    display:inline-block
+}
+.air-txt-fb .video-source {
+    padding:0 .3rem
+}
+.air-text {
+    width:5.62rem;
+    margin:0 auto .3rem
+}
+.air-txt-cont {
+    padding-top:.25rem;
+    line-height:.42rem;
+    color:#000;
+    font-size:.25rem
+}
+.air-icon-column {
+    text-align:right;
+    height:.28rem;
+    color:#888;
+    line-height:.24rem;
+    overflow:hidden;
+    clear:both;
+    font-size:.24rem
+}
+.air-icon-column span {
+    display:none
+}
+.icon-fenge {
+    display:none
+}
+.air-icon-column .icon-fenxiang1 {
+    color:#909090;
+    font-size:.24rem;
+    margin-right:.05rem
+}
+.air-icon-column .icon-shoucang {
+    color:#888;
+    font-size:.28rem
+}
+.air-icon-column .icon-shoucang-red {
+    color:red
+}
+.air-icon-column .icon-shuxian {
+    color:#888;
+    font-size:.24rem
+}
+#img-weather h2.video-title {
+    border-bottom:0;
+    margin-bottom:0
+}
+#img-weather .video-li {
+    border-top:1px solid #b2b2b2;
+    padding-top:.3rem
+}
+#img-weather .video-li .video-footer time {
+    width:2rem
+}
+#img-weather .video-li .weather-source {
+    float:right
+}
+#img-weather .video-li:last-child {
+    margin-bottom:.21rem
+}
+.img-anture-cont {
+    padding:0 .15rem;
+    overflow:hidden;
+    clear:both;
+    margin-bottom:.21rem
+}
+.img-anture-left {
+    float:left;
+    width:2.93rem;
+    height:2.58rem;
+    overflow:hidden;
+    position:relative
+}
+.img-anture-left i img {
+    display:block;
+    width:2.93rem;
+    height:2.58rem
+}
+.img-anture-left p {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:94%;
+    height:.65rem;
+    line-height:.65rem;
+    padding:0 3%;
+    background:rgba(0,0,0,0.6);
+    color:#fff;
+    font-size:.25rem
+}
+.img-anture-right {
+    float:right;
+    width:2.7rem;
+    height:2.58rem;
+    overflow:hidden
+}
+.img-anture-right img {
+    display:block;
+    width:2.7rem;
+    height:1.24rem;
+    margin-bottom:.1rem
+}
+.img-life-cont {
+    overflow:hidden;
+    clear:both;
+    padding-left:.08rem
+}
+.img-life-cont ul li {
+    float:left;
+    margin-left:.09rem;
+    width:1.85rem;
+    height:1.24rem;
+    overflow:hidden;
+    margin-bottom:.21rem
+}
+.img-photography-cont {
+    overflow:hidden;
+    clear:both;
+    margin-bottom:.11rem;
+    padding-left:.06rem
+}
+.img-photography-cont ul li {
+    float:left;
+    width:2.82rem;
+    height:1.85rem;
+    overflow:hidden;
+    margin-left:.1rem;
+    margin-bottom:.1rem
+}
+.img-list-cont {
+    padding:0 .2rem;
+    margin-bottom:.2rem
+}
+.img-list-cont li {
+    height:.6rem;
+    line-height:.4rem;
+    font-size:.25rem;
+    overflow:hidden;
+    padding-top:.06rem;
+    clear:both
+}
+.icon-img {
+    float:left;
+    margin-top:.15rem;
+    height:.38rem;
+    width:.36rem;
+    overflow:hidden;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-img.jpg) 0 0 no-repeat;
+    background-size:100% 100%
+}
+.img-text {
+    width:5rem;
+    color:#000;
+    font-size:.25rem
+}
+.news-list-box {
+    margin:0 .07rem
+}
+.news-list-box li {
+    padding:.26rem .14rem 0;
+    height:1rem;
+    border-top:1px solid #b2b2b2
+}
+.news-li-title {
+    height:.5rem;
+    overflow:hidden;
+    font-size:.25rem;
+    overflow:hidden;
+    font-weight:500
+}
+.news-li-title a {
+    color:#000
+}
+.news-li-mes {
+    font-size:.22rem;
+    color:#b2b2b2
+}
+.news-li-mes time {
+    margin-right:.5rem
+}
+.video-read i {
+    display:inline-block;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-liuyan.png) 0 0 no-repeat;
+    width:.2rem;
+    height:.17rem;
+    background-size:100% 100%
+}
+.news-li-mes .video-read i {
+    margin-top:.03rem;
+    margin-right:.1rem
+}
+#news-expertIntreview h2.video-title {
+    border-bottom:0;
+    margin-bottom:0
+}
+.img-life-cont h3 {
+    font-size:.25rem;
+    color:#000;
+    padding-left:.09rem;
+    height:.5rem
+}
+.img-life-cont h3 a {
+    color:#000
+}
+.air-txt-cont p {
+    display:block;
+    margin-bottom:.2rem
+}
+.air-txt-cont p img {
+    display:block;
+    width:100%
+}
+.news-txt-zhaiyao {
+    clear:both;
+    overflow:hidden;
+    width:4.9rem;
+    margin:0 auto;
+    margin-bottom:.2rem
+}
+.news-txt-icon {
+    float:left;
+    width:.53rem;
+    height:.21rem;
+    line-height:.21rem;
+    overflow:hidden;
+    clear:both;
+    font-size:.16rem;
+    background:#318acb;
+    color:#fff;
+    text-align:center;
+    margin-top:.1rem
+}
+.news-zhaiyao-cont {
+    float:right;
+    font-size:.24rem;
+    color:#000;
+    line-height:.4rem;
+    width:4.2rem
+}
+#weatherNews .air-txt-cont {
+    padding-top:0rem
+}
+.news-txt-img {
+    overflow:hidden;
+    clear:both
+}
+.news-txt-img li {
+    float:left;
+    width:2.76rem;
+    height:1.82rem;
+    margin-bottom:.2rem;
+    overflow:hidden
+}
+.news-txt-img li:nth-child(2n) {
+    float:right
+}
+.news-txt-img li img {
+    display:block;
+    width:2.76rem;
+    height:1.82rem
+}
+.weather-box {
+    background:#fff;
+    margin:0 .09rem .09rem;
+    padding:.09rem
+}
+.warning-map {
+    height:5.43rem;
+    overflow:hidden
+}
+h2.title-cent {
+    color:#000;
+    font-size:.3rem;
+    text-align:center;
+    height:.8rem;
+    line-height:.7rem;
+    overflow:hidden
+}
+.warning-map-cont {
+    height:4.63rem;
+    width:100%;
+    overflow:hidden
+}
+.warning-map-cont img {
+    width:100%;
+    height:4.63rem
+}
+.warning-message-title {
+    overflow:hidden;
+    clear:both;
+    height:2rem
+}
+.warning-message-title p {
+    float:left;
+    width:33%;
+    text-align:center;
+    font-size:.26rem
+}
+.warning-message-title p i {
+    display:block;
+    width:1.12rem;
+    height:1.12rem;
+    overflow:hidden;
+    margin:0 auto .25rem;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/yujing-icon-01.png);
+    background-size:100% 100%
+}
+.warning-message-title p i.warning-message-zl {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/yujing-icon-01.png)
+}
+.warning-message-title p i.warning-message-dj {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/yujing-icon-02.png)
+}
+.warning-message-title p i.warning-message-qy {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/yujing-icon-03.png)
+}
+.warning-message-title p.air-tabon i.warning-message-zl {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/yujing-icon-01on.png)
+}
+.warning-message-title p.air-tabon i.warning-message-dj {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/yujing-icon-02on.png)
+}
+.warning-message-title p.air-tabon i.warning-message-qy {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/yujing-icon-03on.png)
+}
+.warning-search {
+    height:.66rem;
+    overflow:hidden;
+    text-align:center;
+    clear:both
+}
+.warning-search a {
+    display:block;
+    width:1.97rem;
+    height:.45rem;
+    line-height:.45rem;
+    text-align:center;
+    color:#fff;
+    background:#287fdd;
+    margin:0 auto;
+    font-size:.3rem
+}
+.warning-txt {
+    display:none;
+    border-top:1px solid #b2b2b2;
+    margin:0 .07rem;
+    line-height:.52rem;
+    padding-top:.2rem
+}
+.warning-kinds-cont {
+    overflow:hidden;
+    clear:both;
+    padding-bottom:.1rem
+}
+.warning-kinds-cont a {
+    float:left;
+    width:25%;
+    text-align:center;
+    color:#c8c8c8
+}
+.warning-kinds-cont a.warning-tabon {
+    color:#888
+}
+.warning-grade {
+    padding-bottom:.1rem
+}
+.warning-grade p {
+    text-align:center
+}
+.warning-grade p a {
+    color:#b2b2b2
+}
+.warning-grade p a.warning-tabon {
+    color:#888
+}
+.warning-release-cont {
+    overflow:hidden;
+    clear:both
+}
+.warning-release-cont a {
+    float:left;
+    width:25%;
+    overflow:hidden;
+    text-align:center;
+    color:#b2b2b2
+}
+.warning-release-cont a.warning-tabon {
+    color:#888
+}
+#show-city {
+    text-align:center;
+    padding:.08rem 0
+}
+#show-city a {
+    display:block;
+    width:1.45rem;
+    height:.3rem;
+    line-height:.3rem;
+    overflow:hidden;
+    margin:0 auto;
+    font-size:.26rem
+}
+#show-city .icon-show {
+    float:right;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-show.png) 0 0 no-repeat;
+    width:.21rem;
+    height:.11rem;
+    margin-top:.1rem;
+    background-size:100% 100%
+}
+#show-city .icon-hide {
+    float:right;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-hide.png) 0 0 no-repeat;
+    width:.21rem;
+    height:.11rem;
+    margin-top:.1rem;
+    background-size:100% 100%
+}
+.warning-details ul {
+    margin:0 .07rem
+}
+.warning-details li {
+    height:.96rem;
+    overflow:hidden;
+    clear:both;
+    margin-bottom:.3rem;
+    border-bottom:1px solid #b2b2b2
+}
+.warning-details li .warning-num {
+    float:left;
+    width:.6rem;
+    padding-left:.16rem;
+    font-size:.26rem;
+    color:#888;
+    line-height:.66rem
+}
+.warning-details li i {
+    float:left;
+    width:.79rem;
+    height:.66rem;
+    overflow:hidden;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/wu-chense.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    margin-right:.3rem
+}
+.warning-details li i.icon-wu-orange {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/wu-chense.png)
+}
+.warning-details li i.icon-feng-blue {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/feng-blue.png)
+}
+.warning-details li i.icon-wendu-orange {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/wen-orange.png)
+}
+.warning-details li i.icon-xuan-blue {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/long-blue.png)
+}
+.warning-details li i.icon-feng-red {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/feng-red.png)
+}
+.warning-details-txt {
+    float:left;
+    width:2.44rem;
+    font-size:.24rem;
+    height:.66rem;
+    line-height:.3rem
+}
+.warning-details li time {
+    float:right;
+    width:1.05rem;
+    padding-right:.2rem;
+    text-align:center;
+    font-size:.2rem;
+    line-height:.31rem
+}
+.box-all {
+    background:#fff;
+    margin:0 0 .09rem!important;
+    overflow:hidden;
+    clear:both
+}
+.warning-position {
+    padding-top:.25rem;
+    height:.63rem;
+    overflow:hidden;
+    clear:both;
+    text-align:center;
+    font-size:.3rem;
+    color:#000;
+    font-weight:bold
+}
+.warning-position i.icon-dingwei {
+    font-size:.32rem;
+    color:#b3b3b3;
+    font-weight:normal
+}
+.warning-mes {
+    height:1.22rem;
+    padding:.07rem .4rem 0;
+    overflow:hidden;
+    clear:both
+}
+.warning-mes i {
+    float:left;
+    width:1.34rem;
+    height:1.15rem;
+    overflow:hidden;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/feng-bai-blue.png) 0 0 no-repeat;
+    background-size:100% 100%
+}
+.warning-mes i.warning-wu-yellow {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/wu-bai-yellow.png)
+}
+.warning-mes i.warning-feng-blue {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/feng-bai-blue.png)
+}
+.warning-mes i.warning-feng-red {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/feng-bai-red.png)
+}
+.warning-mes i.warning-wen-orange {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/wen-bai-orange.png)
+}
+.warning-text-right {
+    float:right;
+    width:4rem;
+    text-align:center;
+    color:#fff;
+    padding-top:.2rem
+}
+.warning-text-right h3 {
+    font-size:.4rem;
+    display:block;
+    text-align:center
+}
+.warning-text-right p {
+    font-size:.22rem
+}
+.warning-text-right p time {
+    padding-left:.17rem;
+    padding-right:.07rem
+}
+.warning-yellow {
+    background:#fcdd27
+}
+.warning-blue {
+    background:#2b93e0
+}
+.warning-orange {
+    background:#f7b400
+}
+.warning-red {
+    background:#ef2222
+}
+.warning-introduces {
+    padding:.23rem;
+    line-height:.42rem;
+    color:#000
+}
+.warning-defense {
+    margin:.16rem
+}
+.warning-defense-cont {
+    border-top:1px solid #b2b2b2;
+    padding:.17rem;
+    display:none
+}
+.warning-defense-cont strong {
+    display:block;
+    font-size:.3rem;
+    color:#888;
+    line-height:.7rem
+}
+.warning-defense-txt {
+    line-height:.42rem;
+    font-size:.26rem;
+    color:#b2b2b2
+}
+.warning-foot {
+    height:.69rem;
+    overflow:hidden;
+    clear:both
+}
+.warning-foot .all-quanguo {
+    float:left;
+    width:1.74rem;
+    height:.44rem;
+    line-height:.44rem;
+    font-weight:bold;
+    font-size:.26rem;
+    overflow:hidden;
+    border:1px solid #888;
+    border-radius:.1rem;
+    text-align:center
+}
+.show-defense {
+    float:right;
+    text-align:center
+}
+.show-defense i.icon-show {
+    float:right;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-show.png) 0 0 no-repeat;
+    width:.21rem;
+    height:.11rem;
+    margin-top:.1rem;
+    background-size:100% 100%;
+    margin-left:.13rem
+}
+.show-defense i.icon-hide {
+    float:right;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-hide.png) 0 0 no-repeat;
+    width:.21rem;
+    height:.11rem;
+    margin-top:.1rem;
+    background-size:100% 100%;
+    margin-left:.13rem
+}
+#weather {
+    position:relative;
+    width:100%;
+    padding-top: 0.8rem;
+}
+#weather .weather-back img {
+    display:block;
+    width:100%
+}
+#weather .weather-cont {
+    position:absolute;
+    left:0;
+    height:100%;
+    top:0;
+    width:100%;
+    clear:both;
+    overflow:hidden;
+    color:#fff
+}
+#indexWeather {
+    position:relative;
+    width:100%
+}
+#indexWeather .weather-back {
+    width:100%;
+    height:7.31rem;
+    overflow:hidden
+}
+#indexWeather .weather-back img {
+    display:block;
+    width:100%
+}
+#indexWeather .weather-cont {
+    position:absolute;
+    left:0;
+    height:100%;
+    top:0;
+    width:100%;
+    clear:both;
+    overflow:hidden;
+    color:#fff
+}
+.weather-one {
+    height:.63rem;
+    margin-top:.2rem;
+    padding:0 .25rem
+}
+.weather-one .weather-position {
+    float:left;
+    width:3.35rem
+}
+.weather-one .weather-position i.icon-dingwei {
+    font-size:.3rem;
+    float:left;
+    margin-left:.12rem
+}
+.weather-position-address {
+    float:left;
+    font-size:.22rem
+}
+.weather-position-address h2 {
+    display:block;
+    font-size:.3rem;
+    line-height:.3rem;
+    height:.4rem
+}
+.weather-position-address h2 span {
+    color:#c4cc8b;
+    font-weight:normal;
+    padding-left:10px;
+    font-size:.25rem
+}
+.weather-position-address p {
+    font-weight:bold
+}
+.weather-one time {
+    float:right;
+    font-size:.22rem;
+    opacity:.8
+}
+.weather-one time span {
+    padding-left:0
+}
+.weather-two {
+    position:relative;
+    height:1.93rem;
+    clear:both;
+    overflow:hidden;
+    margin-top:27px
+}
+.weather-two .weather-weather {
+    position:absolute;
+    width:.92rem;
+    height:.92rem;
+    top:0;
+    right:.7rem;
+    color:#ffce00
+}
+.weather-two .weather-weather i.svnicon {
+    width:.92rem;
+    height:.92rem
+}
+.weather-wd {
+    float:left;
+    font-size:1.73rem;
+    line-height:1.73rem;
+    padding-left:.3rem;
+    font-weight:normal;
+    padding-top:.1rem
+}
+.weather-wd-top {
+    float:left;
+    font-size:.4rem;
+    line-height:normal;
+    font-weight:normal
+}
+.weather-tqqk {
+    float:left;
+    padding-top:.62rem;
+    position:relative;
+    left:-0.15rem
+}
+.weather-tq {
+    font-size:.36rem;
+    display:block;
+    height:.71rem
+}
+.weather-gdw {
+    font-size:.24rem
+}
+.weather-gdw i.iconfont {
+    font-size:.24rem
+}
+.weather-three {
+    height:.42rem;
+    clear:both;
+    overflow:hidden;
+    margin-bottom:.62rem;
+    font-size:.22rem
+}
+.weather-three ul {
+    text-align:center
+}
+.weather-three li {
+    display:inline-block;
+    margin:0 .12rem;
+    position:relative;
+    padding:0 .12rem
+}
+.weather-three li p {
+    position:relative;
+    z-index:10
+}
+.weather-three li i {
+    display:block;
+    background:#000;
+    opacity:.2;
+    height:.42rem;
+    overflow:hidden;
+    border-radius:8px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:0
+}
+.weather-three li img {
+    float:left;
+    width:.28rem;
+    height:.28rem;
+    margin-top:.05rem;
+    overflow:hidden;
+    margin-right:5px
+}
+.weather-three li b {
+    line-height:.4rem
+}
+.weather-up {
+    height:1.32rem;
+    clear:both;
+    overflow:hidden;
+    position:relative
+}
+.weather-up-li {
+    float:left;
+    width:16.66%;
+    text-align:center;
+    font-size:.24rem;
+    margin-top:5px
+}
+.weather-up-li01 {
+    float:left;
+    width:20%;
+    text-align:center;
+    font-size:.24rem;
+    margin-top:5px
+}
+.weather-yesterday {
+    opacity:.6
+}
+.weatherday {
+    color:#ffce00
+}
+#fj21 {
+    color:#ffce00
+}
+.weather-up-li i,time {
+    margin:0 auto .15rem
+}
+.weather-up .weather-up-li time {
+    display:block;
+    height:.4rem;
+    overflow:hidden
+}
+.weather-down {
+    width:100%;
+    height:1.5rem;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.weather-down p {
+    display:block;
+    line-height:.33rem
+}
+.weather-down p.wefther-fx {
+    font-size:.23rem;
+    padding-top:.16rem
+}
+.weather-down p.wefther-fl {
+    font-size:.18rem
+}
+.weather-four {
+    height:.42rem;
+    line-height:.42rem;
+    clear:both;
+    overflow:hidden;
+    width:90%;
+    float:left;
+    padding:0 5%;
+    position:absolute;
+    bottom:10px
+}
+.weather-sd {
+    float:left
+}
+.weather-four a {
+    color:#fff;
+    display:block;
+    position:relative
+}
+.weather-sd img {
+    width:.1rem;
+    height:.24rem;
+    overflow:hidden;
+    margin-top:.1rem
+}
+.weather-sd span {
+    padding-left:.1rem;
+    font-size:.26rem
+}
+.weather-yb {
+    float:right;
+    width:1.32rem;
+    text-align:center;
+    height:.42rem
+}
+.weather-yb b {
+    display:block;
+    width:100%;
+    height:.42rem;
+    border-radius:16px;
+    background:#2da5dd
+}
+.weather-yb span {
+    display:block;
+    position:absolute;
+    top:.02rem;
+    left:0;
+    width:100%;
+    height:.42rem;
+    line-height:.42rem;
+    overflow:hidden;
+    z-index:2;
+    font-size:.26rem
+}
+.weather-five {
+    height:1.9rem;
+    overflow:hidden;
+    clear:both
+}
+.weather-list {
+    float:left;
+    width:1.28rem;
+    font-size:.24rem
+}
+.weather-list time {
+    text-align:center;
+    height:.5rem;
+    line-height:.5rem;
+    display:block;
+    margin:0 auto .15rem
+}
+.weather-list time span {
+    text-align:center;
+    line-height:.28rem;
+    float:right;
+    font-size:.14rem;
+    font-weight:normal;
+    height:.28rem;
+    color:#ffce00;
+    background:rgba(0,0,0,0.5);
+    padding:0 .07rem;
+    border-radius:.1rem;
+    margin-top:.1rem
+}
+.weather-list i {
+    margin:0 auto;
+    margin-bottom:.2rem
+}
+.weather-wendu {
+    position:relative;
+    width:.84rem;
+    margin-left:.15rem
+}
+.weather-wendu p {
+    height:.22rem;
+    line-height:.22rem;
+    overflow:hidden
+}
+.weather-wendu p.num-down {
+    text-align:right
+}
+.weather-wendu em {
+    display:block;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/index-xieline.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:.26rem;
+    height:.31rem;
+    position:absolute;
+    top:.1rem;
+    left:.15rem
+}
+.box-dataremind {
+    margin-top:.09rem
+}
+.date-remind {
+    padding:.3rem
+}
+.date-remind-txt {
+    height:.4rem;
+    line-height:.35rem;
+    overflow:hidden;
+    clear:both
+}
+.date-remind-txt-no {
+    margin-bottom:0;
+    padding-top:.25rem
+}
+.date-remind-txt p {
+    float:left;
+    font-size:.24rem;
+    color:#333
+}
+.date-remind-txt span {
+    float:left;
+    background:#2da5dd;
+    color:#fff;
+    font-size:.24rem;
+    height:.35rem;
+    line-height:.37rem;
+    padding:0 .11rem;
+    margin:0 .25rem;
+    border-radius:.2rem
+}
+.date-remind-txt-no span {
+    background:#d8596a
+}
+.headlingStory {
+    padding:.2rem;
+    height:.49rem;
+    overflow:hidden;
+    line-height:.5rem;
+    clear:both
+}
+.headlingStory dl dt {
+    float:left;
+    width:1.45rem;
+    text-align:right;
+    font-size:.26rem;
+    color:#888
+}
+.headlingStory dl dd {
+    float:left;
+    text-align:left;
+    width:4.35rem;
+    font-size:.26rem
+}
+.weather-quick {
+    overflow:hidden;
+    clear:both;
+    padding:.3rem 0 .1rem
+}
+.weather-quick li {
+    float:left;
+    width:25%;
+    text-align:center;
+    margin-bottom:.25rem
+}
+.weather-quick li a {
+    font-size:.22rem;
+    color:#888
+}
+.weather-quick li i {
+    display:block;
+    width:38px;
+    height:38px;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/index-icon-320.png?e) 0 0 no-repeat;
+    overflow:hidden;
+    margin:0 auto .1rem
+}
+.weather-quick li:nth-child(1) i {
+    background-position:-3px -4px
+}
+.weather-quick li:nth-child(2) i {
+    background-position:-54px -4px
+}
+.weather-quick li:nth-child(3) i {
+    background-position:-104px -4px
+}
+.weather-quick li:nth-child(4) i {
+    background-position:-154px -4px
+}
+.weather-quick li:nth-child(5) i {
+    background-position:-154px -55px
+}
+.weather-quick li:nth-child(6) i {
+    background-position:-3px -54px
+}
+.weather-quick li:nth-child(7) i {
+    background-position:-53px -54px
+}
+.weather-quick li:nth-child(8) i {
+    background-position:-104px -54px
+}
+.weather-recommend,.index-special,.index-news {
+    padding:.13rem;
+    padding-bottom:0
+}
+.weather-recommend i img {
+    display:block;
+    width:100%;
+    height:2.27rem
+}
+.recommend-title {
+    height:.8rem;
+    line-height:.8rem;
+    overflow:hidden;
+    font-size:.3rem;
+    text-align:center
+}
+.recommend-title a {
+    color:#000
+}
+.recommendFooter {
+    border-top:1px solid #b2b2b2;
+    height:.7rem;
+    line-height:.7rem;
+    padding:0 .15rem;
+    overflow:hidden;
+    clear:both;
+    font-size:.22rem;
+    color:#b2b2b2
+}
+.recommendFooter a {
+    color:#b2b2b2
+}
+.recommendFooter .weather-fr a {
+    float:left;
+    margin-left:.2rem
+}
+.recommendFooter .fengxiang-weather,.recommendFooter .more-weather {
+    margin-top:.2rem
+}
+.index-special-img {
+    height:1.24rem;
+    overflow:hidden;
+    clear:both
+}
+.index-special-img img {
+    float:left;
+    height:1.24rem;
+    width:1.9rem;
+    overflow:hidden
+}
+.index-special-img dl {
+    float:right;
+    width:3.76rem;
+    line-height:.3rem;
+    padding-top:.24rem;
+    height:1rem;
+    overflow:hidden
+}
+.index-special-img dl dt {
+    height:.3rem;
+    margin-bottom:.18rem;
+    overflow:hidden
+}
+.index-special-img dl dt span {
+    float:left;
+    height:.3rem;
+    color:#000;
+    padding-right:10px;
+    border-right:1px solid #000
+}
+.index-special-img dl a {
+    color:#000;
+    font-size:.3rem
+}
+.special-list {
+    padding:.15rem 0
+}
+.special-list li {
+    height:.55rem;
+    line-height:.55rem;
+    overflow:hidden;
+    padding-left:.2rem
+}
+.special-list li em {
+    float:left;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-dian.png) 0 0 no-repeat;
+    width:.06rem;
+    height:.06rem;
+    overflow:hidden;
+    background-size:100% 100%;
+    overflow:hidden;
+    margin:.25rem .1rem 0 .1rem
+}
+.special-list li a {
+    color:#888;
+    font-size:.28rem;
+    float:left;
+    width:5.6rem
+}
+.index-news h3 {
+    height:.8rem;
+    line-height:.8rem;
+    overflow:hidden;
+    text-align:left;
+    font-size:.3rem;
+    color:#000;
+    padding-left:.2rem
+}
+.index-news h3 a {
+    color:#000
+}
+.index-news-tab {
+    overflow:hidden;
+    clear:both;
+    line-height:.63rem;
+    font-size:.28rem;
+    padding-bottom:.15rem
+}
+.index-news-tab a {
+    float:left;
+    margin:0 .15rem;
+    white-space:normal
+}
+.index-news-list {
+    border-top:1px solid #b2b2b2;
+    border-bottom:1px solid #b2b2b2;
+    padding:.07rem 0
+}
+.index-news-list li {
+    height:.56rem;
+    line-height:.56rem;
+    overflow:hidden;
+    clear:both
+}
+.index-news-list li i {
+    float:left;
+    overflow:hidden;
+    margin-top:.19rem;
+    margin-left:.1rem;
+    margin-right:.1rem
+}
+.index-news-list li a {
+    color:#888;
+    float:left;
+    padding-left:.2rem;
+    width:5.5rem
+}
+.periphery {
+    padding-bottom:.15rem
+}
+.periphery h2.video-title {
+    margin:0 .21rem .15rem
+}
+.periphery-li {
+    padding:0 .2rem;
+    height:.71rem;
+    line-height:.71rem;
+    overflow:hidden;
+    clear:both;
+    font-size:.26rem
+}
+.periphery-li span {
+    float:left;
+    width:1.1rem
+}
+.periphery-li ul {
+    float:left;
+    width:4.7rem
+}
+.periphery-li ul li {
+    float:left;
+    margin:0 .18rem
+}
+.major-list,.tool-list {
+    clear:both;
+    overflow:hidden
+}
+.major-list li,.tool-list li {
+    float:left;
+    width:25%;
+    text-align:center;
+    font-size:.26rem;
+    height:.7rem;
+    line-height:.7rem
+}
+.tool h2.video-title a {
+    font-size:.2rem;
+    color:#b2b2b2;
+    font-weight:normal;
+    padding-right:.2rem;
+    padding-top:.1rem
+}
+#channel-nav {
+    position:fixed;
+    width:6.4rem;
+    background:#fff;
+    top:.9rem;
+    left:50%;
+    margin-left:-3.2rem;
+    display:none;
+    z-index:999999
+}
+.channel-nav {
+    padding:0 .24rem;
+    clear:both;
+    overflow:hidden
+}
+h2.nav-title {
+    height:.9rem;
+    line-height:.9rem;
+    overflow:hidden;
+    color:#000;
+    font-size:.3rem;
+    padding-left:.16rem
+}
+.nav-li {
+    width:100%;
+    overflow:hidden;
+    clear:both;
+    line-height:.77rem;
+    font-size:.28rem
+}
+.nav-li li {
+    float:left;
+    white-space:normal;
+    padding:0 .14rem
+}
+.nav-li li a {
+    color:#888
+}
+.nav-cont {
+    padding:.15rem 0;
+    border-top:1px solid #b2b2b2;
+    border-bottom:1px solid #b2b2b2
+}
+.nav-hot-cont {
+    padding-bottom:.25rem
+}
+#weatherSearch {
+    background:#287fdd;
+    height:.72rem;
+    overflow:hidden
+}
+.weatherSearch {
+    padding-top:.1rem
+}
+.inp-seach {
+    width:5rem;
+    padding:0 .3rem;
+    height:.53rem;
+    line-height:.53rem;
+    border-radius:.1rem;
+    border:0;
+    background:#fff;
+    color:#000;
+    display:block;
+    margin:0 auto;
+    font-size:.24rem
+}
+.cityposition {
+    padding:.22rem .3rem 0;
+    height:.65rem;
+    overflow:hidden;
+    clear:both;
+    color:#000;
+    font-size:.3rem;
+    line-height:.4rem
+}
+.weather-fl {
+    float:left
+}
+.weather-fr {
+    float:right
+}
+.icon-city-position {
+    display:block;
+    overflow:hidden
+}
+.cityposition .icon-city-position {
+    float:left;
+    margin-right:10px
+}
+.city-btn-position {
+    display:block;
+    width:1rem;
+    height:.44rem
+}
+.city-hot {
+    overflow:hidden;
+    clear:both
+}
+h2.city-hot-title {
+    background:#287fdd;
+    height:.89rem;
+    line-height:.89rem;
+    padding-left:.3rem;
+    color:#fff;
+    font-size:.3rem;
+    font-weight:normal;
+    overflow:hidden
+}
+.city-hot ul {
+    overflow:hidden;
+    clear:both;
+    line-height:.75rem;
+    padding:.15rem 0
+}
+.city-hot ul li {
+    float:left;
+    width:25%;
+    text-align:center;
+    font-size:.28rem;
+    color:#888
+}
+.city-hot ul li a {
+    color:#888
+}
+.city-liCont {
+    height:.85rem;
+    overflow:hidden;
+    clear:both;
+    position:relative;
+    margin:0 .16rem;
+    border-bottom:1px solid #b2b2b2;
+    line-height:.85rem;
+    font-weight:normal;
+    padding:0 .16rem;
+    font-size:.28rem;
+    color:#888;
+    cursor:pointer
+}
+.city-li:last-child .city-liCont {
+    border-bottom:0
+}
+.city-li ul {
+    display:none
+}
+.show-city {
+    display:block;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-show-city.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:.26rem;
+    height:.13rem;
+    overflow:hidden
+}
+.hide-city {
+    display:block;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-hide-city.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:.26rem;
+    height:.13rem;
+    overflow:hidden
+}
+.city-li .show-city,.city-li .hide-city {
+    float:right;
+    margin-top:.37rem
+}
+.city-liCont strong {
+    font-weight:normal
+}
+.city-li-show ul {
+    display:block;
+    background:#f8f8f8
+}
+.city-li-show ul li {
+    padding:0 .27rem;
+    height:.85rem;
+    line-height:.85rem;
+    margin:0 .16rem;
+    border-bottom:1px solid #b2b2b2;
+    color:#b2b2b2
+}
+.city-li-show ul li a {
+    color:#b2b2b2
+}
+.city-li-show .city-liCont {
+    border-bottom:0
+}
+.city-li-show ul li:nth-last-child(1) {
+    border-bottom:0
+}
+.special-cont {
+    padding:.09rem
+}
+.special-cont-img {
+    height:3.23rem;
+    overflow:hidden;
+    margin-bottom:.1rem;
+    position:relative
+}
+.special-cont-img i img {
+    display:block;
+    width:100%;
+    height:3.23rem;
+    overflow:hidden
+}
+.special-cont-img p {
+    width:90%;
+    padding:0 5%;
+    height:.66rem;
+    line-height:.66rem;
+    overflow:hidden;
+    background:rgba(40,127,221,0.3);
+    color:#fff;
+    position:absolute;
+    left:0;
+    bottom:0;
+    text-align:center;
+    font-size:.28rem
+}
+.special-cont-txt {
+    font-size:.22rem;
+    line-height:.32rem;
+    padding:.15rem;
+    color:#000
+}
+.days-days {
+    height:1rem;
+    overflow:hidden;
+    margin-bottom:.1rem;
+    background:#287fdd;
+    padding:0 .2rem;
+    clear:both
+}
+.days-days .days-ml {
+    float:left
+}
+.days-days i {
+    float:left;
+    width:.82rem;
+    height:.82rem;
+    margin-top:.06rem
+}
+.days-ml-txt {
+    float:left;
+    color:#fff;
+    margin-left:.1rem;
+    font-size:.3rem
+}
+.days-ml-txt num {
+    font-size:.5rem;
+    height:.5rme;
+    overflow:hidden
+}
+.days-days .days-mr {
+    float:right;
+    width:1.26rem;
+    padding-top:.3rem
+}
+.days-mr a {
+    display:block;
+    background:rgba(32,102,177,0.4);
+    height:.37rem;
+    text-align:center;
+    line-height:.37rem;
+    color:#fff;
+    font-size:.24rem;
+    border-radius:.1rem
+}
+.days-box {
+    padding:0 .09rem;
+    overflow:hidden;
+    clear:both
+}
+.days-box ul li {
+    overflow:hidden;
+    clear:both
+}
+.days-li {
+    background:#287fdd;
+    overflow:hidden;
+    clear:both
+}
+.days-li-cont {
+    height:.87rem;
+    border-bottom:1px solid #fff;
+    overflow:hidden;
+    clear:both;
+    margin:0 .16rem;
+    padding-left:.2rem
+}
+.days-box ul li:nth-last-child(1) .days-li-cont {
+    border-bottom:0
+}
+.days-li time {
+    float:left;
+    width:1.9rem;
+    text-align:left;
+    font-size:.3rem;
+    color:#fff;
+    line-height:.87rem
+}
+.days-li-icon {
+    float:left;
+    width:1.5rem;
+    padding-top:.14rem;
+    margin-left:.11rem
+}
+.days-li .days-wendu {
+    float:right;
+    width:1.6rem;
+    text-align:right;
+    color:#fff;
+    font-size:.26rem;
+    line-height:.87rem
+}
+.days-details {
+    margin-bottom:.1rem;
+    background:#2b93e0;
+    overflow:hidden;
+    clear:both;
+    padding-bottom:.09rem
+}
+.days-tab .days-li-cont {
+    border-bottom:0
+}
+.days-details {
+    color:#fff
+}
+.days-details-txt {
+    padding:.09rem .2rem;
+    overflow:hidden;
+    clear:both
+}
+.days-details-txt p {
+    float:left;
+    width:2.9rem;
+    text-align:center;
+    height:.77rem;
+    line-height:.77rem;
+    overflow:hidden;
+    font-size:.28rem
+}
+.days-details-txt p:nth-child(1) {
+    border-bottom:1px solid #fff
+}
+.days-details-txt p:nth-child(2) {
+    border-bottom:1px solid #fff;
+    border-left:1px solid #fff
+}
+.days-details-txt p:nth-child(4) {
+    border-left:1px solid #fff
+}
+.days-details-txt p span {
+    padding-left:.1rem
+}
+.days-details-more {
+    overflow:hidden;
+    clear:both
+}
+.days-details-more p {
+    float:left;
+    width:1.95rem;
+    height:1.03rem;
+    overflow:hidden;
+    text-align:center;
+    background:#287fdd;
+    margin-left:.09rem;
+    line-height:1.03rem
+}
+.days-details-more p img {
+    vertical-align:middle
+}
+.zhishu-yuedu .video-li:nth-child(2) {
+    border-top:1px solid #b2b2b2;
+    padding-top:.3rem
+}
+.xiaobaike {
+    margin:.09rem;
+    background:#f2f2f2;
+    padding:0 .24rem
+}
+.xiaobaike h2 {
+    font-size:.3rem;
+    color:#000;
+    display:block;
+    height:.75rem;
+    line-height:.75rem;
+    text-align:center
+}
+.xiaobaike-txt {
+    font-size:.25rem;
+    line-height:150%;
+    color:#888;
+    padding-bottom:.2rem
+}
+.zhishutixing {
+    position:relative;
+    height:6.32rem;
+    overflow:hidden;
+    clear:both;
+    width:100%
+}
+.zhishu-cont {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6.32rem;
+    overflow:hidden;
+    color:#fff
+}
+.zhishu-huodong {
+    height:.78rem;
+    padding:.31rem .31rem 0;
+    overflow:hidden;
+    clear:both;
+    margin-bottom:.9rem
+}
+.zhishu-huodong i {
+    float:right;
+    width:.78rem;
+    height:.78rem;
+    background:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-chenlian.svg) 0 0 no-repeat;
+    background-size:100% 100%
+}
+.zhishu-huodong i.icon-houdong01 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-chenlian.svg);
+    display:none
+}
+.zhishu-huodong i.icon-houdong02 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-ziwaixian.svg)
+}
+.zhishu-huodong i.icon-houdong03 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-diaoyu.svg)
+}
+.zhishu-huodong i.icon-houdong04 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-ganmao.svg)
+}
+.zhishu-huodong i.icon-houdong05 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-shushidu.svg)
+}
+.zhishu-huodong i.icon-houdong06 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-chuxing.svg)
+}
+.zhishu-huodong i.icon-houdong07 {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/SVGimg/icon-guangjie.svg)
+}
+.zhishu-txt {
+    height:2.5rem;
+    overflow:hidden;
+    font-size:.26rem;
+    padding-left:.4rem
+}
+.zhishu-txt p {
+    display:block;
+    height:.4rem;
+    line-height:.4rem;
+    overflow:hidden
+}
+.zhishu-txt h2 {
+    display:inline-block;
+    border-bottom:1px solid #b2b2b2;
+    font-size:.46rem;
+    line-height:180%;
+    margin-bottom:.15rem
+}
+.zhishu-foot {
+    background:rgba(40,127,221,0.8);
+    padding:.2rem .4rem;
+    position:absolute;
+    bottom:0;
+    left:0;
+    font-size:.25rem;
+    line-height:.36rem
+}
+.zhishu-box {
+    background:#fff;
+    padding-top:.2rem;
+    margin-bottom:0rem;
+    overflow:hidden;
+    clear:both
+}
+.zhishu-data {
+    height:1.07rem;
+    overflow:hidden;
+    clear:both
+}
+.zhishu-data li {
+    float:left;
+    width:.88rem;
+    margin-right:.04rem;
+    background:#f2f2f2;
+    text-align:center
+}
+.zhishu-data li:nth-last-child(1) {
+    margin-right:0
+}
+.zhishu-data li time {
+    display:block;
+    height:.9rem;
+    line-height:.9rem;
+    font-size:.22rem;
+    color:#000
+}
+.zhishu-data li i {
+    display:block;
+    height:.1rem;
+    overflow:hidden
+}
+.zhishu-data li i.air-yellow {
+    background:#f9e535
+}
+.zhishu-data li i.air-green {
+    background:#39b54a
+}
+.zhishu-data li i.air-red {
+    background:#ff1d25
+}
+.zhishu-data li.air-tabon {
+    background:#fff
+}
+.zhishu-foot {
+    width:6.7rem
+}
+.zhishu-foot p {
+    padding-right:1rem
+}
+.zhishu-back img {
+    width:100%
+}
+.local-news .index-news-list {
+    border:0
+}
+.local-news .video-li {
+    margin-bottom:.1rem
+}
+.local-news .index-news-list {
+    margin-bottom:.15rem
+}
+.day-weather {
+    position:relative;
+    width:100%;
+    height:7.3rem;
+    overflow:hidden;
+    clear:both
+}
+.day-weather-back {
+    width:100%;
+    height:7.3rem;
+    overflow:hidden
+}
+.day-weather-back img {
+    width:100%;
+    height:7.3rem;
+    overflow:hidden;
+    display:block
+}
+.day-cont {
+    position:absolute;
+    top:.3rem;
+    left:0;
+    width:100%;
+    height:7rem;
+    color:#fff
+}
+.day-cont .weather-one {
+    height:.7rem
+}
+.day-list-date {
+    height:.7rem;
+    overflow:hidden;
+    clear:both
+}
+.day-list-date p {
+    float:none;
+    width:33%;
+    text-align:center;
+    font-size:.28rem;
+    cursor:pointer;
+    display:none
+}
+.day-list-date p.air-tabon {
+    color:#ffce00;
+    font-size:.33rem;
+    display:block;
+    margin:0 auto
+}
+.day-list-date p:nth-child(2) {
+    width:34%
+}
+.day-list-cont {
+    padding:0 .46rem;
+    display:none
+}
+.day-li-wendu {
+    overflow:hidden;
+    clear:both;
+    height:1.68rem;
+    width:3.3rem;
+    margin:0 auto;
+    position:relative
+}
+.day-li-bigwendu {
+    float:left
+}
+.day-li-bigwendu .day-wd {
+    font-size:1.73rem;
+    line-height:1.73rem;
+    float:left;
+    font-weight:normal
+}
+.day-top {
+    float:left;
+    font-size:.9rem
+}
+.day-li-smallwendu {
+    float:right;
+    position:absolute;
+    bottom:.2rem;
+    right:0
+}
+.day-li-date {
+    height:.56rem;
+    text-align:center;
+    font-size:.24rem;
+    padding-top:.2rem
+}
+.day-li-ranking {
+    height:.64rem;
+    text-align:center;
+    font-size:.24rem;
+    display:none
+}
+.day-li-tishi {
+    height:1.4rem;
+    overflow:hidden;
+    margin-bottom:.17rem
+}
+.day-li-tishi p {
+    display:block;
+    background:rgba(0,0,0,0.2);
+    border-radius:.1rem;
+    padding:.2rem;
+    font-size:.24rem;
+    line-height:.34rem
+}
+.day-li-tishi2 {
+    height:.42rem;
+    overflow:hidden
+}
+.day-xianxing {
+    float:left;
+    width:1.2rem;
+    height:.42rem;
+    line-height:.42rem;
+    font-size:.24rem;
+    background:rgba(0,0,0,0.2);
+    border-radius:.1rem;
+    padding:0 .07rem;
+    text-align:center
+}
+.day-xianxing img {
+    width:.22rem;
+    height:.22rem;
+    float:left;
+    margin-top:.1rem
+}
+.day-kongqi {
+    float:right;
+    width:1.2rem;
+    height:.42rem;
+    line-height:.42rem;
+    font-size:.24rem;
+    background:rgba(0,0,0,0.2);
+    border-radius:.1rem;
+    padding:0 .07rem;
+    text-align:center
+}
+.day-kongqi img {
+    width:.22rem;
+    height:.22rem;
+    float:left;
+    margin-top:.1rem
+}
+#day-tianqi {
+    margin-top:.1rem
+}
+.day-houdong {
+    border-bottom:1px solid #b2b2b2;
+    margin:0 .16rem;
+    text-align:center;
+    line-height:.54rem;
+    padding-top:.17rem
+}
+.day-houdong p span {
+    color:#a91e29
+}
+.day-dayli {
+    margin:0 .16rem .3rem
+}
+.day-dayli-txt {
+    height:1.18rem;
+    overflow:hidden;
+    clear:both;
+    position:relative;
+    border-bottom:1px solid #b2b2b2
+}
+.day-dayli-txt dl {
+    height:1.18rem;
+    width:50%;
+    float:left
+}
+.day-dayli-txt dl.day-even {
+    position:absolute;
+    right:0;
+    top:0;
+    border-left:1px solid #b2b2b2
+}
+.day-dayli-txt dl dt {
+    float:left;
+    margin:.2rem 0 0 .22rem;
+    width:.78rem;
+    height:.78rem;
+    overflow:hidden
+}
+.day-dayli-txt dl.day-even dt {
+    margin-left:.3rem
+}
+.day-dayli-txt dl dt img {
+    width:.78rem;
+    height:.78rem
+}
+.day-dayli-txt dl dd {
+    float:right;
+    font-size:.24rem;
+    text-align:right;
+    margin:.2rem .3rem 0 0;
+    line-height:.4rem
+}
+.day-dayli-txt dl dd time {
+    font-size:.22rem
+}
+.day-dayli-txt dl.day-even dd {
+    margin-right:.23rem
+}
+.box-all-blue {
+    background:#3089ca;
+    margin:0 .09rem .09rem;
+    color:#fff
+}
+.day-hour {
+    padding:0 .16rem;
+    overflow:hidden;
+    clear:both
+}
+h2.day-title {
+    font-size:.3rem;
+    height:.88rem;
+    line-height:.88rem;
+    overflow:hidden;
+    border-bottom:1px solid #fff;
+    font-weight:normal;
+    padding-left:.2rem
+}
+.day-hour-li {
+    overflow:hidden;
+    clear:both;
+    padding-top:.2rem;
+    padding-left:.01rem;
+    border-bottom:1px solid #fff;
+    height:2.15rem;
+    margin-bottom:.05rem;
+    text-align:center
+}
+.day-hour-li li {
+    float:left;
+    width:.98rem;
+    text-align:center
+}
+.day-hour-li li time {
+    font-size:.21rem;
+    display:block;
+    height:.65rem
+}
+.day-hour-li li p {
+    font-size:.22rem;
+    padding-left:.1rem
+}
+.day-hour-li li i {
+    display:block;
+    margin:0 auto .5rem
+}
+.day-hour-li li i.weather-d44 {
+    width:.76rem;
+    height:.55rem
+}
+.day-yufang {
+    height:1.38rem;
+    overflow:hidden;
+    clear:both;
+    margin-bottom:.15rem
+}
+.day-yufang-li {
+    height:1.18rem;
+    overflow:hidden;
+    clear:both;
+    padding:.1rem .2rem
+}
+.day-yufang-cen {
+    border-left:1px solid #fff;
+    border-right:1px solid #fff
+}
+.day-yufang-li i.svnicon {
+    width:.74rem;
+    height:.74rem;
+    float:left
+}
+.day-yufang-txt {
+    float:right;
+    text-align:right;
+    font-size:.24rem
+}
+.day-yufang-txt p {
+    padding-top:.3rem;
+    height:.5rem;
+    overflow:hidden
+}
+.day-yufang-txt span {
+    display:block;
+    color:#c0dbef
+}
+.day-leiyun {
+    overflow:hidden;
+    clear:both;
+    margin-bottom:.1rem
+}
+.day-leiyun-title {
+    height:.89rem;
+    background:#2b93e0;
+    line-height:.89rem;
+    color:#fff;
+    cursor:pointer;
+    width:100%;
+    margin-bottom:.1rem
+}
+.day-leiyun-title p {
+    float:left;
+    width:50%;
+    text-align:center
+}
+.day-leiyun-title p:nth-child(2) {
+    width:50%
+}
+.day-leiyun-cont {
+    width:6.04rem;
+    height:4.6rem;
+    overflow:hidden;
+    margin:0 auto;
+    display:none
+}
+.day-jichang-box {
+    clear:both;
+    overflow:hidden;
+    margin:0 .09rem .09rem
+}
+.day-jichang-title {
+    height:1.48rem;
+    overflow:hidden;
+    text-align:center;
+    color:#fff;
+    background:#e4b944
+}
+.day-jichang-title h3 {
+    display:block;
+    padding-top:.25rem;
+    height:.45rem;
+    overflow:hidden;
+    font-size:.35re2m
+}
+.day-jichang-title h2 {
+    font-size:.45rem
+}
+.day-jichang-li {
+    height:.6rem;
+    overflow:hidden;
+    padding:.22rem .3rem;
+    clear:both;
+    background:#3089ca;
+    color:#fff
+}
+.day-jichang-qifei {
+    background:#3377bc
+}
+.day-jichang-li i img {
+    float:left;
+    width:.56rem;
+    height:.56rem
+}
+.day-jichang-li span {
+    float:right;
+    height:.6rem;
+    line-height:.6rem;
+    overflow:hidden;
+    font-size:.24rem
+}
+.day-jichang-li time {
+    float:left;
+    margin-left:1.5rem;
+    width:1.47rem;
+    font-size:.22rem;
+    text-align:center;
+    line-height:.3rem
+}
+.page {
+    max-width:640px;
+    left:50%;
+    margin-left:-3.2rem
+}
+.pull-to-refresh-content {
+    top:0rem
+}
+.headlingNews {
+    padding:.2rem;
+    line-height:.5rem;
+    overflow:hidden;
+    clear:both
+}
+.headlingNews dl dt {
+    float:left;
+    width:1.45rem;
+    text-align:right;
+    font-size:.26rem;
+    color:#888
+}
+.headlingNews dl dd {
+    float:left;
+    text-align:left;
+    width:4.35rem;
+    font-size:.26rem
+}
+.pull-to-refresh-layer .pull-to-refresh-arrow {
+    width:.2rem;
+    height:.3rem;
+    margin-top:-0.15rem;
+    margin-left:-0.1rem;
+    background-size:.2rem .3rem
+}
+.pull-to-refresh-layer {
+    height:.9rem
+}
+.pull-to-refresh-layer .preloader {
+    height:.36rem;
+    width:.36rem;
+    margin-top:-0.18rem;
+    margin-left:-0.18rem
+}
+.weathercont {
+    padding-top:0
+}
+.city-listnew {
+    overflow:hidden;
+    clear:both;
+    margin-bottom:.2rem
+}
+.city-listnew p {
+    border:1px solid #a5a5a5;
+    width:3rem
+}
+.city-listnew p a {
+    display:block;
+    height:.8rem;
+    line-height:.8rem;
+    overflow:hidden;
+    text-align:center;
+    font-size:.33rem
+}
+.jingdian-more {
+    border:1px solid #a5a5a5;
+    margin-bottom:1.2rem;
+    line-height:.88rem
+}
+.jingdian-more a {
+    display:block;
+    height:.88rem;
+    line-height:.88rem;
+    text-align:center;
+    font-size:.33rem
+}
+.jingdian-more a i {
+    display:inline-block;
+    margin-right:.13rem;
+    margin-top:.1rem
+}
+body#days15 {
+    background:#f5f9fc
+}
+header#header-day {
+    height:.9rem;
+    overflow:hidden;
+    padding:0 .3rem;
+    background:#fff;
+    width:5.8rem;
+    clear:both;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    z-index:99999
+}
+header#header-day h1 {
+    display:block;
+    position:absolute;
+    left:2rem;
+    right:2rem;
+    text-align:center;
+    font-size:.33rem;
+    line-height:.9rem;
+    color:#3089ca
+}
+header#header-day .day-position {
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-dw.png) left top no-repeat;
+    background-size:100% 100%;
+    width:.21rem;
+    height:.29rem;
+    display:inline-block;
+    margin-right:.15rem
+}
+#header-day p {
+    float:left;
+    font-size:.26rem;
+    color:#3089ca;
+    line-height:.9rem
+}
+#header-day p i.day-back {
+    float:left;
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-back.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:.25rem;
+    height:.44rem;
+    margin-top:.18rem;
+    margin-right:.23rem
+}
+.daystime {
+    background:#3089ca;
+    color:#fff;
+    height:.8rem;
+    overflow:hidden;
+    clear:both;
+    line-height:.8rem;
+    padding:0 .3rem;
+    text-align:center;
+    font-size:.24rem;
+    position:relative;
+    z-index:99
+}
+.daystime a {
+    color:#fff
+}
+.daystime p {
+    display:inline-block
+}
+#daysfooter p {
+    font-size:.26rem
+}
+#daysfooter {
+    position:fixed;
+    bottom:0;
+    width:5.8rem
+}
+.days-cont li {
+    height:1.59rem;
+    overflow:hidden;
+    clear:both
+}
+.days-list-top {
+    height:.59rem;
+    overflow:hidden;
+    clear:both;
+    padding:0 .3rem 0 .5rem
+}
+.days-list-top time {
+    float:left;
+    line-height:.59rem;
+    padding-right:.25rem;
+    color:#282828;
+    font-size:.22rem
+}
+.days-list-top span {
+    color:#adadad;
+    font-size:.22rem;
+    line-height:.59rem
+}
+.days-quality {
+    background:#2da5dd none repeat scroll 0 0!important;
+    border:1px solid #2da5dd;
+    border-radius:10px;
+    color:#fff;
+    float:right;
+    font-size:.18rem;
+    height:.3rem;
+    line-height:.35rem;
+    margin-top:.16rem;
+    text-align:center;
+    width:1rem
+}
+.days-01 {
+    background:#fcbe81
+}
+.days-02 {
+    background:#fcea81
+}
+.days-03 {
+    background:#95ea8e
+}
+.days-04 {
+    background:#fc8081
+}
+.days-05 {
+    background:#8cbfea
+}
+.days-list-foot {
+    height:1rem;
+    overflow:hidden;
+    clear:both;
+    background:#3ba1eb;
+    padding-right:.25rem;
+    color:#fff
+}
+.air-zhilaing {
+    float:left;
+    width:.3rem;
+    text-align:center;
+    padding-top:.16rem;
+    line-height:.34rem;
+    height:.84rem;
+    overflow:hidden;
+    background:#2183e4;
+    color:#fff;
+    font-size:.2rem
+}
+.days-zl01 {
+    background:#2183e4;
+    color:#fff
+}
+.days-zl02 {
+    background:#62bfff;
+    color:#fff
+}
+.days-zl03 {
+    background:#8ea7bd;
+    color:#fff
+}
+.days-zl04 {
+    background:#9a9792;
+    color:#fff
+}
+.days-wd {
+    float:left;
+    width:2.06rem;
+    text-align:center;
+    font-size:.3rem;
+    line-height:1rem;
+    height:1rem;
+    overflow:hidden
+}
+.days-icon {
+    float:left;
+    width:1.58rem;
+    padding-top:.25rem
+}
+.days-qingkuang {
+    float:right;
+    width:1.75rem;
+    padding-top:.17rem;
+    font-size:.24rem;
+    line-height:.36rem
+}
+.days-cont {
+    padding-bottom:0
+}
+.city-li li {
+    height:.85rem;
+    overflow:hidden;
+    clear:both;
+    position:relative;
+    margin:0 .16rem;
+    border-bottom:1px solid #b2b2b2;
+    line-height:.85rem;
+    font-weight:normal;
+    padding:0 .16rem;
+    font-size:.28rem;
+    color:#000;
+    cursor:pointer
+}
+.city-li li:nth-last-child(1) {
+    border-bottom:0
+}
+.city-li li a {
+    color:#000
+}
+.search-txt {
+    position:relative
+}
+.searchld {
+    background:#fff;
+    position:absolute;
+    width:100%;
+    top:.72rem;
+    display:none
+}
+.searchld ul li {
+    height:.85rem;
+    overflow:hidden;
+    clear:both;
+    border-bottom:1px solid #b2b2b2;
+    line-height:.85rem;
+    font-weight:normal;
+    padding:0 .16rem;
+    font-size:.28rem;
+    color:#000;
+    cursor:pointer
+}
+.searchld ul li a {
+    display:block
+}
+.searchld ul {
+    padding-bottom:2rem
+}
+.searchld ul li.color-red {
+    color:red
+}
+.icon-xiang-shang {
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-tabup.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:.2rem;
+    height:.12rem;
+    overflow:hidden;
+    float:right;
+    margin-top:.15rem
+}
+#weathertab .icon-xiang-xia {
+    background:url(http://i.tq121.com.cn/i/wap2016/news/icon-next.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:.2rem;
+    height:.12rem;
+    overflow:hidden;
+    float:right;
+    margin-top:.15rem
+}
+.weather-three li a {
+    color:#fff
+}
+.show-city-next {
+    width:.13rem;
+    height:.21rem;
+    display:block;
+    overflow:hidden
+}
+.city-li .show-city-next {
+    float:right;
+    margin-top:.3rem
+}
+body#days15 .pull-to-refresh-content {
+    top:.8rem
+}
+.warning-details li i img {
+    display:block;
+    width:.79rem;
+    height:.66rem
+}
+.warning-mes i img {
+    display:block;
+    width:1.34rem;
+    height:1.15rem
+}
+.weather-three li b {
+    line-height:.45rem
+}
+.swiper-container {
+    width:100%
+}
+.list-block .item-inner {
+    min-height:.9rem;
+    padding-top:.1rem;
+    padding-right:0;
+    padding-bottom:.1rem
+}
+.list-block .item-title.label {
+    font-size:.3rem
+}
+.list-block input[type="text"],.list-block input[type="password"],.list-block input[type="search"],.list-block input[type="email"],.list-block input[type="tel"],.list-block input[type="url"],.list-block input[type="date"],.list-block input[type="datetime-local"],.list-block input[type="time"],.list-block input[type="number"],.list-block select,.list-block textarea {
+    font-size:.3rem;
+    height:.8rem;
+    text-align:right
+}
+.list-block {
+    margin:0rem 0 .2rem
+}
+.list-block .item-content {
+    min-height:.9rem;
+    padding-left:.1rem
+}
+.picker-columns {
+    height:5rem
+}
+
+.warning-txt {
+    border-top:0
+}
+#weather .weather-cont{background-position:0 0;background-repeat:no-repeat;background-size:cover;position:relative;}
+.today-life-index{background:#fff;margin:0.2rem 0;}
+.today-life-index .btitle{padding:0 0.2rem;font-size:0.37rem;line-height:0.70rem;border-bottom:1px solid #ededed}
+.today-life-index .btitle a {
+    float: right;
+    color: #3097fd;
+    font-size:0.25rem;
+}
+.today-life-index .btitle a:after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.1rem;
+    width:0.15rem;
+    height:0.15rem;
+    border-width:1px;
+    border-style:solid;
+    border-color:transparent #3097fd #3097fd transparent;
+    transform:rotate(-45deg);
+}
+.life-icon-allergy1, .life-icon-allergy2, .life-icon-calendar, .life-icon-carwash1, .life-icon-carwash2, .life-icon-cloth1, .life-icon-cloth2, .life-icon-cloth3, .life-icon-cloth4, .life-icon-cold1, .life-icon-cold2, .life-icon-dressed1, .life-icon-dressed2, .life-icon-fishing1, .life-icon-fishing2, .life-icon-moring1, .life-icon-moring2, .life-icon-rain1, .life-icon-rain2, .life-icon-sun1, .life-icon-sun2, .life-icon-traffic1, .life-icon-traffic2 {
+    background: url('../life-icon.png');
+    background-size: 0.7rem auto;
+    background-repeat: no-repeat;
+    width: 0.9rem;
+    height:0.7rem;
+}
+.today-life-index .bmeta dt,.today-life-index .bmeta dd{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.today-life-index .bmeta dt div:first-of-type {
+    border-right: 1px solid #ededed;
+}
+.today-life-index .bmeta dt div{
+    width: 50%;
+    padding:0.2rem 0.3rem;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.life-icon-cloth1 {
+    background-position: 0 -3.7rem;
+}
+.life-icon-cloth2{background-position: 0 -4.5rem;}
+.life-icon-cloth3{background-position: 0 -5.3rem;}
+.life-icon-cloth4{background-position: 0 -6.1rem;}
+
+
+.life-icon-calendar{
+    background-position: 0 -1.5rem;
+}
+.today-life-index .bmeta dt p{color:#4e4e4e}
+.today-life-index .bmeta dt p span {
+    font-size: 0.24rem;
+    color: #8d8d8d;
+}
+.today-life-index .bmeta dd div {
+    width: 33.33333%;
+    padding:0.3rem;
+    border: #ededed solid;
+    border-width: 1px 1px 0 0;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    text-align:center;
+}
+.today-life-index .bmeta dd span{
+    display:inline-block;
+}
+.today-life-index .bmeta dd p{
+
+}
+.life-icon-rain1{
+    background-position: 0.1rem -12.6rem;
+}
+.life-icon-rain2{
+    background-position: 0.1rem -13.4rem;
+}
+.life-icon-cold2{
+    background-position: 0.1rem -7.45rem;
+}
+.life-icon-cold1{
+    background-position: 0.1rem -6.65rem;
+}
+.life-icon-allergy1{
+    background-position: 0.1rem 0;
+}
+.life-icon-allergy2{
+    background-position: 0.1rem -0.8rem;
+}
+.life-icon-moring1{
+    background-position: 0.1rem -11.2rem;
+}
+.life-icon-moring2{
+    background-position: 0.1rem -12rem;
+}
+.life-icon-dressed1{
+    background-position: 0.1rem -8.2rem;
+}
+.life-icon-dressed2{
+    background-position: 0.1rem -9rem;
+}
+.life-icon-sun1{
+    background-position: 0.1rem -14.1rem;
+}
+.life-icon-sun2{
+    background-position: 0.1rem -14.9rem;
+}
+.life-icon-carwash2{
+    background-position: 0.1rem -3rem;
+}
+.life-icon-carwash1{
+    background-position: 0.1rem -2.2rem;
+}
+.life-icon-traffic1{
+    background-position: 0.1rem -15.6rem;
+}
+.life-icon-traffic2{
+    background-position: 0.1rem -16.4rem;
+}
+.life-icon-fishing1{
+    background-position: 0.1rem -9.7rem;
+}
+.life-icon-fishing2{
+    background-position: 0.1rem -10.5rem;
+}
+@media only screen and (min-width:100px) and (max-width:320px) {
+    .weather-container1,.weather-container2 {
+    height:57px;
+    width:100%
+}
+}@media only screen and (min-width:321px) and (max-width:400px) {
+    .weather-container1,.weather-container2 {
+    height:67px;
+    width:100%
+}
+}@media only screen and (min-width:401px) and (max-width:420px) {
+    .weather-container1,.weather-container2 {
+    height:73px;
+    width:100%
+}
+}@media only screen and (min-width:421px) and (max-width:500px) {
+    .weather-container1,.weather-container2 {
+    height:73px;
+    width:100%
+}
+}@media only screen and (min-width:501px) and (max-width:640px) {
+    .weather-container1,.weather-container2 {
+    height:91px;
+    width:100%
+}
+}.day-hour-li li time {
+    height:.45rem
+}
+.day-hour-li li i {
+    margin-bottom:.3rem
+}
+.day-hour-li {
+    height:1.75rem;
+    border-bottom:0
+}
+.day-hour {
+    padding:0
+}
+.day-hour h2.day-title,.day-hour .day-yufang {
+    margin:0 .16rem
+}
+.day-hour .day-yufang {
+    border-top:0 solid #fff
+}
+.day-li-wendu {
+    width:4.1rem;
+    text-align:center
+}
+.day-li-bigwendu {
+    text-align:right;
+    float:right;
+    padding-right:1rem
+}
+.day-smallwd {
+    font-size:.65rem;
+    padding-top:.5rem
+}
+.day-top {
+    float:none;
+    display:inline;
+    text-align:right
+}
+.day-wd {
+    float:right;
+    text-align:right;
+    font-size:.3rem;
+    position:relative
+}
+.day-wd span {
+    position:absolute;
+    font-size:.9rem;
+    margin-top:-0.2rem
+}
+#header .weatherfont {
+    font-size:.6rem
+}
+.header-mr .icon-gengduo {
+    top:.1rem
+}
+#header .icon-fenxiang {
+    top:.1rem
+}
+.weather-list time.weather-zt {
+    text-align:center;
+    width:1.05rem
+}
+.weather-wendu {
+    width:1rem;
+    margin-left:.14rem;
+    height:.48rem
+}
+.weather-wendu p {
+    height:.24rem;
+    line-height:.24rem;
+    width:.5rem;
+    text-align:right
+}
+.weather-wendu p.num-down {
+    float:right;
+    text-align:left
+}
+.weather-wendu em {
+    left:.27rem
+}
+.weather-three ul {
+    padding-left:.1rem
+}
+.weather-three li {
+    float:left;
+    margin:0 .1rem
+}
+.weather-two li {
+    background:rgba(0,0,0,0.3) none repeat scroll 0 0;
+    border-radius:.3rem;
+    height:.42rem;
+    line-height:.42rem;
+    overflow:hidden;
+    padding:0 .2rem;
+    text-align:center;
+    display:inline-block;
+    float:right;
+    margin-right:.25rem
+}
+.weather-two li a {
+    color:#fff
+}
+.weather-two li img {
+    float:left;
+    height:.28rem;
+    margin-right:5px;
+    margin-top:.05rem;
+    overflow:hidden;
+    width:.28rem
+}
+.weather-two li span {
+    font-size:.22rem
+}
+.weather-three li {
+    height:.42rem;
+    padding:0 .05rem;
+    line-height:.42rem;
+    border-radius:.1rem;
+    overflow:hidden;
+    text-align:left
+}
+.weather-down p {
+    line-height:.4rem
+}
+@media only screen and (min-width:0) and (max-width:320px) {
+    .weather-three li span {
+    margin-left:4px
+}
+}.weather-position-address h2 {
+    line-height:.4rem
+}
+.weather-up {
+    margin-bottom:.2rem
+}
+.weather-up .weather-up-li time {
+    height:.5rem;
+    line-height:.5rem;
+    margin-bottom:0
+}
+.weather-two .weather-weather {
+    width:1.38rem;
+    height:1.38rem;
+    right:.5rem
+}
+.weather-two .weather-weather i.svnicon {
+    width:1.38rem;
+    height:1.38rem
+}
+#air-footer nav {
+    font-size:.26rem;
+    height:.7rem
+}
+#air-footer p {
+    font-size:.22rem;
+    height:.5rem;
+    line-height:.5rem
+}
+.icon-wd-up,.icon-wd-down {
+    overflow:hidden;
+    float:right;
+    margin-top:.15rem
+}
+.new-icon-dingwei {
+    float:left;
+    margin-top:.06rem;
+    margin-right:.08rem
+}
+.new-icon-up,.new-icon-down {
+    display:inline-block;
+    margin-right:.05rem
+}
+.zhishu-foot {
+    width:5.6rem
+}
+.new-icon-back {
+    float:left;
+    margin-left:.3rem;
+    margin-top:.3rem
+}
+.new-white-back {
+    float:left;
+    margin-left:.3rem;
+    margin-top:.3rem;
+    position:relative;
+    z-index:555
+}
+#airQuality .wearther-fenxiang {
+    margin-right:.3rem
+}
+
+.headlingNews dl dd {
+    overflow:hidden;
+    height:.5rem;
+    position:relative
+}
+.headlingNews dl dd .swiper-container {
+    width:100%
+}
+.weather-up time span {
+    line-height:.28rem;
+    font-weight:normal;
+    float:right;
+    font-size:.14rem;
+    height:.28rem;
+    color:#ffce00;
+    background:rgba(0,0,0,0.5);
+    padding:0 .07rem;
+    border-radius:.1rem;
+    margin-top:.1rem
+}
+.wefther-fh {
+    float:left;
+    text-align:center;
+    width:100%
+}
+.wefther-fh span {
+    font-weight:normal;
+    font-size:.18rem;
+    color:#fff;
+    padding:.02rem .17rem;
+    border-radius:.2rem;
+    margin-top:.1rem
+}
+.wefther-fh .youAQI {
+    background:#9dca80
+}
+.wefther-fh .liangAQI {
+    background:#edc73a
+}
+.wefther-fh .qingAQI {
+    background:#f19f39
+}
+.wefther-fh .zhong1AQI {
+    background:#da545d
+}
+.wefther-fh .zhong4AQI {
+    background:#b9387a
+}
+.wefther-fh .yanAQI {
+    background:#871325
+}
+body#days15 {
+    font-family:'ruiziyun'
+}
+.index-special-img dl {
+    font-size:.3rem
+}
+.weather-two .weather-weather {
+    width:.94rem;
+    height:.95rem;
+    right:.7rem
+}
+.weather-two .weather-weather i.svnicon {
+    width:.94rem;
+    height:.95rem
+}
+.weather-down p.wefther-fx {
+    padding-top:.08rem
+}
+.weather-three {
+    margin-bottom:.52rem
+}
+.nav-btn {
+    padding:.23rem 0;
+    border-top:1px solid #b2b2b2
+}
+.nav-btn-news {
+    height:.3rem;
+    line-height:.3rem;
+    width:40%;
+    border:1px solid #3d8ce0;
+    color:#3d8ce0;
+    font-size:.28rem;
+    padding:5px 0;
+    text-align:center;
+    display:block;
+    border-radius:.1rem;
+    margin:0 auto
+}
+#fj20 {
+    opacity:.6
+}
+#fa20 {
+    opacity:.6
+}
+.day-leiyun .day-leiyun-title .air-tabon {
+    background:#2880dd
+}
+.weather-one .weather-position {
+    float:left;
+    width:3.95rem
+}
+.days-wd {
+    text-align:left;
+    padding-left:.18rem;
+    width:1.88rem
+}
+#index .index-special-img dl {
+    padding-top:.14rem;
+    height:1.1rem;
+    font-weight:normal
+}
+.weather-three li.wea-three01 {
+    margin-left:.2rem
+}
+@media only screen and (min-width:320px) and (max-width:374px) {
+    .wearther-fenxiang,.weather-navmore,.fengxiang-weather,.more-weather,.index-news-list li i,.new-icon-dingwei,.new-icon-up,.new-icon-down,.icon-wd-down,.icon-wd-up,.new-icon-back,.new-white-back,.icon-city-position,.city-btn-position,.jingdian-more a i,.show-city-next {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/weather-icon-375.png);
+    background-repeat:no-repeat
+}
+.wearther-fenxiang {
+    width:22px;
+    height:24px;
+    background-position:-113px 0
+}
+.weather-navmore {
+    width:24px;
+    height:24px;
+    background-position:0 0
+}
+.fengxiang-weather {
+    display:block;
+    width:17px;
+    height:14px;
+    background-position:-234px -176px
+}
+.more-weather {
+    display:block;
+    width:17px;
+    height:14px;
+    background-position:-350px -53px
+}
+.index-news-list li i {
+    width:10px;
+    height:10px;
+    background-position:-117px -292px
+}
+.index-news-list li:nth-child(2) i {
+    background-position:-352px -234px
+}
+.new-icon-dingwei {
+    width:14px;
+    height:14px;
+    background-position:-348px 0
+}
+.new-icon-up {
+    width:7px;
+    height:13px;
+    background-position:-234px -234px
+}
+.new-icon-down {
+    width:7px;
+    height:13px;
+    background-position:-175px -234px
+}
+.icon-wd-down {
+    width:14px;
+    height:8px;
+    background-position:-58px -234px
+}
+.icon-wd-up {
+    width:14px;
+    height:8px;
+    background-position:0 -234px
+}
+.icon-wd-up,.icon-wd-down {
+    margin-top:.18rem
+}
+.new-icon-back {
+    width:30px;
+    height:20px;
+    background-position:-176px -176px
+}
+.new-white-back {
+    width:16px;
+    height:20px;
+    background-position:-117px -234px
+}
+.icon-city-position {
+    width:20px;
+    height:24px;
+    background-position:-293px 0
+}
+.weather-fl {
+    line-height:24px
+}
+.city-btn-position {
+    width:60px;
+    height:25px;
+    background-position:-176px -293px
+}
+.jingdian-more a {
+    width:3rem;
+    display:block;
+    margin:0 auto
+}
+.jingdian-more a i {
+    width:36px;
+    height:30px;
+    background-position:0 -292px;
+    float:left
+}
+.show-city-next {
+    width:9px;
+    height:16px;
+    background-position:-292px -58px
+}
+#weather .weather-back img {
+    width:105%
+}
+}
+@media only screen and (min-width:320px) and (max-width:340px) {
+    #weather .weather-back img {
+    width:110%
+}
+}
+@media only screen and (min-width:375px) and (max-width:413px) {
+    .wearther-fenxiang,.weather-navmore,.fengxiang-weather,.more-weather,.index-news-list li i,.new-icon-dingwei,.new-icon-up,.new-icon-down,.icon-wd-down,.icon-wd-up,.new-icon-back,.new-white-back,.icon-city-position,.city-btn-position,.jingdian-more a i,.show-city-next {
+    background-image:url(../weather-icon-414.png);
+    background-repeat:no-repeat
+}
+.wearther-fenxiang {
+    width:24px;
+    height:24px;
+    background-position:-123px 0
+}
+.weather-navmore {
+    width:26px;
+    height:26px;
+    background-position:0 0
+}
+.fengxiang-weather {
+    display:block;
+    width:20px;
+    height:16px;
+    background-position:-258px -194px
+}
+.more-weather {
+    display:block;
+    width:20px;
+    height:16px;
+    background-position:-388px -58px
+}
+.index-news-list li i {
+    width:12px;
+    height:12px;
+    background-position:-129px -323px
+}
+.index-news-list li:nth-child(2) i {
+    background-position:-388px -259px
+}
+.new-icon-dingwei {
+    width:16px;
+    height:16px;
+    background-position:-384px 0
+}
+.new-icon-up {
+    width:7px;
+    height:14px;
+    background-position:-258px -258px
+}
+.new-icon-down {
+    width:7px;
+    height:14px;
+    background-position:-194px -258px
+}
+.icon-wd-down {
+    width:16px;
+    height:10px;
+    background-position:-64px -258px
+}
+.icon-wd-up {
+    width:16px;
+    height:10px;
+    background-position:0 -258px
+}
+.icon-wd-up,.icon-wd-down {
+    margin-top:.16rem
+}
+.new-icon-back {
+    width:30px;
+    height:20px;
+    background-position:-194px -194px
+}
+.new-white-back {
+    width:16px;
+    height:20px;
+    background-position:-129px -258px
+}
+.icon-city-position {
+    width:22px;
+    height:26px;
+    background-position:-323px 0
+}
+.weather-fl {
+    line-height:26px
+}
+.city-btn-position {
+    width:65px;
+    height:30px;
+    background-position:-194px -323px
+}
+.jingdian-more a {
+    width:3rem;
+    display:block;
+    margin:0 auto
+}
+.jingdian-more a i {
+    width:30px;
+    height:36px;
+    background-position:0 -322px;
+    float:left
+}
+.show-city-next {
+    width:10px;
+    height:18px;
+    background-position:-323px -65px
+}
+}
+@media only screen and (min-width:414px) and (max-width:640px) {
+    .wearther-fenxiang,.weather-navmore,.fengxiang-weather,.more-weather,.index-news-list li i,.new-icon-dingwei,.new-icon-up,.new-icon-down,.icon-wd-down,.icon-wd-up,.new-icon-back,.new-white-back,.icon-city-position,.city-btn-position,.jingdian-more a i,.show-city-next {
+    background-image:url(http://i.tq121.com.cn/i/wap2016/news/weather-icon-640.png);
+    background-repeat:no-repeat
+}
+.wearther-fenxiang {
+    width:30px;
+    height:30px;
+    background-position:-151px 0
+}
+.weather-navmore {
+    width:30px;
+    height:30px;
+    background-position:0 0
+}
+.fengxiang-weather {
+    display:block;
+    width:26px;
+    height:20px;
+    background-position:-312px -234px
+}
+.more-weather {
+    display:block;
+    width:26px;
+    height:20px;
+    background-position:-468px -70px
+}
+.index-news-list li i {
+    width:14px;
+    height:14px;
+    background-position:-156px -390px
+}
+.index-news-list li:nth-child(2) i {
+    background-position:-469px -313px
+}
+.new-icon-dingwei {
+    width:19px;
+    height:19px;
+    background-position:-464px 0
+}
+.new-icon-up {
+    width:8px;
+    height:16px;
+    background-position:-312px -312px
+}
+.new-icon-down {
+    width:8px;
+    height:16px;
+    background-position:-234px -312px
+}
+.icon-wd-down {
+    width:16px;
+    height:10px;
+    background-position:-78px -312px
+}
+.icon-wd-up {
+    width:16px;
+    height:10px;
+    background-position:0 -312px
+}
+.icon-wd-up,.icon-wd-down {
+    margin-top:.16rem
+}
+.new-icon-back {
+    width:30px;
+    height:20px;
+    background-position:-234px -234px
+}
+.new-white-back {
+    width:16px;
+    height:20px;
+    background-position:-156px -312px
+}
+.icon-city-position {
+    width:26px;
+    height:32px;
+    background-position:-390px 0
+}
+.weather-fl {
+    line-height:32px
+}
+.city-btn-position {
+    width:78px;
+    height:34px;
+    background-position:-234px -390px
+}
+.jingdian-more a {
+    width:3rem;
+    display:block;
+    margin:0 auto
+}
+.jingdian-more a i {
+    width:34px;
+    height:40px;
+    background-position:0 -390px;
+    float:left
+}
+.show-city-next {
+    width:12px;
+    height:20px;
+    background-position:-390px -78px
+}
+}.new-icon-up {
+    width:8px;
+    height:14px;
+    background:rgba(0,0,0,0) url("http://i.tq121.com.cn/i/wap2016/news/topLow.png") no-repeat scroll 0 0 / 20px auto;
+    margin-right:5px
+}
+.new-icon-down {
+    width:8px;
+    height:14px;
+    background:rgba(0,0,0,0) url("http://i.tq121.com.cn/i/wap2016/news/topLow.png") no-repeat scroll -11px 0 / 20px auto;
+    margin-right:5px
+}
+.video-li {
+    height:1.34rem;
+    margin-bottom:.2rem
+}
+.video-li .video-li-img {
+    margin-top:.03rem
+}
+#channel-nav {
+    background:#ececec;
+    height:100%
+}
+.channel-nav {
+    background:#fff
+}
+.weather-list time span {
+    float:right;
+    margin-right:.15rem;
+    display:none
+}
+.weather-up time span {
+    float:right;
+    margin-right:.15rem;
+    display:none
+}
+#header-day .header-mr {
+    float:right;
+    margin-top:.3rem
+}
+#header-day .header-mr a {
+    font-size:.4rem;
+    color:#4d4d4d;
+    margin-right:.1rem;
+    margin-left:.2rem
+}
+.header-mr a.zhanshi {
+    float:right;
+    margin-left:0;
+    margin-right:.3rem
+}
+.video-li-cont-text a {
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    line-clamp:2;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical
+}
+.xyn-text {
+    color:#000;
+    margin-top:3px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical
+}
+
+.weather-listn ul li {
+    overflow:hidden;
+    white-space:nowrap
+}
+.footer h1 {
+    text-align:center;
+    width:100%
+}
+#air-footer {
+    border-top:1px solid #b2b2b2;
+    margin:20px auto 0;
+    padding-top:20px;
+    text-align:center;
+    width:100%
+}
+#air-footer i img {
+    display:block;
+    height:40px;
+    margin:0 auto .4rem
+}
+#air-footer nav {
+    font-size:.26rem
+}
+#air-footer nav span {
+    padding:0 10px
+}
+#air-footer p {
+    height:30px;
+    color:#888;
+    line-height:30px
+}
+.xyn-button-div {
+    width:.9rem;
+    float:left;
+    height:.3rem;
+    text-align:center;
+    margin-top:.3rem;
+    line-height:.3rem
+}
+.xyn-button-div .xyn-button {
+    font-size:.22rem;
+    display:block;
+    border:1px solid #959595;
+    color:#030303
+}
+
+.city-weather-list{overflow:hidden;}
+.city-weather-list li{float:left;width:50%;height:1.5rem;border:1px solid #ededed;border-top:0;border-right:0;box-sizing:border-box;font-size:0.24rem;display:-webkit-box; -webkit-box-pack: center; -webkit-box-align: center; text-align:center;}
+.city-weather-list li:nth-child(2n+1):nth-last-child(1){display:none;}
+
+.city-name::after{
+   content:"\A";
+   white-space: pre;
+   line-height:0.35rem
+}
+.city-icon {
+    width:28px;
+    overflow:hidden;
+}
+.city-icon i {
+    font-family:"weathericons";
+    text-align:center;
+    font-size:24px;
+    font-weight:400;
+    color:#5aa0f7
+}
+@font-face {
+    font-family:weathericons;
+    src:url(../fonts/weathericons-regular-webfont.eot);
+    src:url(../fonts/weathericons-regular-webfont.eot?#iefix) format('embedded-opentype'),url(../fonts/weathericons-regular-webfont.woff) format('woff'),url(../fonts/weathericons-regular-webfont.ttf) format('truetype'),url(../fonts/weathericons-regular-webfont.svg#weathericons-regular-webfontRg) format('svg');
+    font-weight:400;
+    font-style:normal
+}
+.wi {
+    display:inline-block;
+    font-family:weathericons;
+    font-style:normal;
+    font-weight:400;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.wi-day-cloudy-gusts:before {
+    content:"\f000"
+}
+.wi-day-cloudy-windy:before {
+    content:"\f001"
+}
+.wi-day-cloudy:before {
+    content:"\f002"
+}
+.wi-day-fog:before {
+    content:"\f003"
+}
+.wi-day-hail:before {
+    content:"\f004"
+}
+.wi-day-lightning:before {
+    content:"\f005"
+}
+.wi-day-rain-mix:before {
+    content:"\f006"
+}
+.wi-day-rain-wind:before {
+    content:"\f007"
+}
+.wi-day-rain:before {
+    content:"\f008"
+}
+.wi-day-showers:before {
+    content:"\f009"
+}
+.wi-day-snow:before {
+    content:"\f00a"
+}
+.wi-day-sprinkle:before {
+    content:"\f00b"
+}
+.wi-day-sunny-overcast:before {
+    content:"\f00c"
+}
+.wi-day-sunny:before {
+    content:"\f00d"
+}
+.wi-day-storm-showers:before {
+    content:"\f00e"
+}
+.wi-day-thunderstorm:before {
+    content:"\f010"
+}
+.wi-cloudy-gusts:before {
+    content:"\f011"
+}
+.wi-cloudy-windy:before {
+    content:"\f012"
+}
+.wi-cloudy:before {
+    content:"\f013"
+}
+.wi-fog:before {
+    content:"\f014"
+}
+.wi-hail:before {
+    content:"\f015"
+}
+.wi-lightning:before {
+    content:"\f016"
+}
+.wi-rain-mix:before {
+    content:"\f017"
+}
+.wi-rain-wind:before {
+    content:"\f018"
+}
+.wi-rain:before {
+    content:"\f019"
+}
+.wi-showers:before {
+    content:"\f01a"
+}
+.wi-snow:before {
+    content:"\f01b"
+}
+.wi-sprinkle:before {
+    content:"\f01c"
+}
+.wi-storm-showers:before {
+    content:"\f01d"
+}
+.wi-thunderstorm:before {
+    content:"\f01e"
+}
+.wi-windy:before {
+    content:"\f021"
+}
+.wi-night-alt-cloudy-gusts:before {
+    content:"\f022"
+}
+.wi-night-alt-cloudy-windy:before {
+    content:"\f023"
+}
+.wi-night-alt-hail:before {
+    content:"\f024"
+}
+.wi-night-alt-lightning:before {
+    content:"\f025"
+}
+.wi-night-alt-rain-mix:before {
+    content:"\f026"
+}
+.wi-night-alt-rain-wind:before {
+    content:"\f027"
+}
+.wi-night-alt-rain:before {
+    content:"\f028"
+}
+.wi-night-alt-showers:before {
+    content:"\f029"
+}
+.wi-night-alt-snow:before {
+    content:"\f02a"
+}
+.wi-night-alt-sprinkle:before {
+    content:"\f02b"
+}
+.wi-night-alt-storm-showers:before {
+    content:"\f02c"
+}
+.wi-night-alt-thunderstorm:before {
+    content:"\f02d"
+}
+.wi-night-clear:before {
+    content:"\f02e"
+}
+.wi-night-cloudy-gusts:before {
+    content:"\f02f"
+}
+.wi-night-cloudy-windy:before {
+    content:"\f030"
+}
+.wi-night-cloudy:before {
+    content:"\f031"
+}
+.wi-night-hail:before {
+    content:"\f032"
+}
+.wi-night-lightning:before {
+    content:"\f033"
+}
+.wi-night-rain-mix:before {
+    content:"\f034"
+}
+.wi-night-rain-wind:before {
+    content:"\f035"
+}
+.wi-night-rain:before {
+    content:"\f036"
+}
+.wi-night-showers:before {
+    content:"\f037"
+}
+.wi-night-snow:before {
+    content:"\f038"
+}
+.wi-night-sprinkle:before {
+    content:"\f039"
+}
+.wi-night-storm-showers:before {
+    content:"\f03a"
+}
+.wi-night-thunderstorm:before {
+    content:"\f03b"
+}
+.wi-celsius:before {
+    content:"\f03c"
+}
+.wi-cloud-down:before {
+    content:"\f03d"
+}
+.wi-cloud-refresh:before {
+    content:"\f03e"
+}
+.wi-cloud-up:before {
+    content:"\f040"
+}
+.wi-cloud:before {
+    content:"\f041"
+}
+.wi-degrees:before {
+    content:"\f042"
+}
+.wi-down-left:before {
+    content:"\f043"
+}
+.wi-down:before {
+    content:"\f044"
+}
+.wi-fahrenheit:before {
+    content:"\f045"
+}
+.wi-horizon-alt:before {
+    content:"\f046"
+}
+.wi-horizon:before {
+    content:"\f047"
+}
+.wi-left:before {
+    content:"\f048"
+}
+.wi-lightning:before {
+    content:"\f016"
+}
+.wi-night-fog:before {
+    content:"\f04a"
+}
+.wi-refresh-alt:before {
+    content:"\f04b"
+}
+.wi-refresh:before {
+    content:"\f04c"
+}
+.wi-right:before {
+    content:"\f04d"
+}
+.wi-sprinkles:before {
+    content:"\f04e"
+}
+.wi-strong-wind:before {
+    content:"\f050"
+}
+.wi-sunrise:before {
+    content:"\f051"
+}
+.wi-sunset:before {
+    content:"\f052"
+}
+.wi-thermometer-exterior:before {
+    content:"\f053"
+}
+.wi-thermometer-internal:before {
+    content:"\f054"
+}
+.wi-thermometer:before {
+    content:"\f055"
+}
+.wi-tornado:before {
+    content:"\f056"
+}
+.wi-up-right:before {
+    content:"\f057"
+}
+.wi-up:before {
+    content:"\f058"
+}
+.wi-wind-west:before {
+    content:"\f059"
+}
+.wi-wind-south-west:before {
+    content:"\f05a"
+}
+.wi-wind-south-east:before {
+    content:"\f05b"
+}
+.wi-wind-south:before {
+    content:"\f05c"
+}
+.wi-wind-north-west:before {
+    content:"\f05d"
+}
+.wi-wind-north-east:before {
+    content:"\f05e"
+}
+.wi-wind-north:before {
+    content:"\f060"
+}
+.wi-wind-east:before {
+    content:"\f061"
+}
+.wi-smoke:before {
+    content:"\f062"
+}
+.wi-dust:before {
+    content:"\f063"
+}
+.wi-snow-wind:before {
+    content:"\f064"
+}
+.wi-day-snow-wind:before {
+    content:"\f065"
+}
+.wi-night-snow-wind:before {
+    content:"\f066"
+}
+.wi-night-alt-snow-wind:before {
+    content:"\f067"
+}
+.wi-day-sleet-storm:before {
+    content:"\f068"
+}
+.wi-night-sleet-storm:before {
+    content:"\f069"
+}
+.wi-night-alt-sleet-storm:before {
+    content:"\f06a"
+}
+.wi-day-snow-thunderstorm:before {
+    content:"\f06b"
+}
+.wi-night-snow-thunderstorm:before {
+    content:"\f06c"
+}
+.wi-night-alt-snow-thunderstorm:before {
+    content:"\f06d"
+}
+.wi-solar-eclipse:before {
+    content:"\f06e"
+}
+.wi-lunar-eclipse:before {
+    content:"\f070"
+}
+.wi-meteor:before {
+    content:"\f071"
+}
+.wi-hot:before {
+    content:"\f072"
+}
+.wi-hurricane:before {
+    content:"\f073"
+}
+.wi-smog:before {
+    content:"\f074"
+}
+.wi-alien:before {
+    content:"\f075"
+}
+.wi-snowflake-cold:before {
+    content:"\f076"
+}
+.wi-stars:before {
+    content:"\f077"
+}
+.wi-night-partly-cloudy:before {
+    content:"\f083"
+}
+.wi-umbrella:before {
+    content:"\f084"
+}
+.wi-day-windy:before {
+    content:"\f085"
+}
+.wi-night-alt-cloudy:before {
+    content:"\f086"
+}
+.wi-up-left:before {
+    content:"\f087"
+}
+.wi-down-right:before {
+    content:"\f088"
+}
+.wi-time-12:before {
+    content:"\f089"
+}
+.wi-time-1:before {
+    content:"\f08a"
+}
+.wi-time-2:before {
+    content:"\f08b"
+}
+.wi-time-3:before {
+    content:"\f08c"
+}
+.wi-time-4:before {
+    content:"\f08d"
+}
+.wi-time-5:before {
+    content:"\f08e"
+}
+.wi-time-6:before {
+    content:"\f08f"
+}
+.wi-time-7:before {
+    content:"\f090"
+}
+.wi-time-8:before {
+    content:"\f091"
+}
+.wi-time-9:before {
+    content:"\f092"
+}
+.wi-time-10:before {
+    content:"\f093"
+}
+.wi-time-11:before {
+    content:"\f094"
+}
+.wi-day-sleet:before {
+    content:"\f0b2"
+}
+.wi-night-sleet:before {
+    content:"\f0b3"
+}
+.wi-night-alt-sleet:before {
+    content:"\f0b4"
+}
+.wi-sleet:before {
+    content:"\f0b5"
+}
+.wi-day-haze:before {
+    content:"\f0b6"
+}
+.wi-beafort-0:before {
+    content:"\f0b7"
+}
+.wi-beafort-1:before {
+    content:"\f0b8"
+}
+.wi-beafort-2:before {
+    content:"\f0b9"
+}
+.wi-beafort-3:before {
+    content:"\f0ba"
+}
+.wi-beafort-4:before {
+    content:"\f0bb"
+}
+.wi-beafort-5:before {
+    content:"\f0bc"
+}
+.wi-beafort-6:before {
+    content:"\f0bd"
+}
+.wi-beafort-7:before {
+    content:"\f0be"
+}
+.wi-beafort-8:before {
+    content:"\f0bf"
+}
+.wi-beafort-9:before {
+    content:"\f0c0"
+}
+.wi-beafort-10:before {
+    content:"\f0c1"
+}
+.wi-beafort-11:before {
+    content:"\f0c2"
+}
+.wi-beafort-12:before {
+    content:"\f0c3"
+}
+.wi-wind-default:before {
+    content:"\f0b1"
+}
+
+.bar, #weather,.wrapper,.details{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+.with-panel-right-cover .bar,.with-panel-right-cover #weather,.with-panel-right-cover .wrapper,.with-panel-right-cover .details{
+    -webkit-transform: translate3d(-4rem, 0, 0);
+    transform: translate3d(-4rem, 0, 0);
+}
