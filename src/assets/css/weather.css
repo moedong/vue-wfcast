@@ -6609,6 +6609,7 @@ body#days15 {
     transform: translate3d(0, 0, 0);
     -webkit-transition: all 400ms;
     transition: all 400ms;
+    position: relative;
 }
 .with-panel-right-cover .bar,.with-panel-right-cover #weather,.with-panel-right-cover .wrapper,.with-panel-right-cover .details{
     -webkit-transform: translate3d(-4rem, 0, 0);
