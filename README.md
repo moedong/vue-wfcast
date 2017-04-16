@@ -26,7 +26,7 @@
 ### 项目地址：（`git clone`）
 
 ```shell
-git clone https://github.com/Awheat/vue2-douban-market.git
+git clone https://github.com/moedong/vue-wfcast.git
 ```
 
 ### 安装
