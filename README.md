@@ -18,9 +18,13 @@
 ![主页](http://i1.piimg.com/591496/bdb92cd2db57c87b.png)
 ![主页](http://i1.piimg.com/591496/c2519c333c323dcf.png)
 ![主页](http://i1.piimg.com/591496/4d44f5e0cf31944b.png)
+
 ![我的关注](http://i1.piimg.com/591496/170539b0ea49bb32.png)
+
 ![我的关注](http://i1.piimg.com/591496/e62aa2499d39f94a.png)
+
 ![城市切换](http://i1.piimg.com/591496/654de14ec17109d0.png)
+
 ![详细空气指数](http://i1.piimg.com/591496/2c4744a95a4c7a74.png)
 
 ### 项目地址：（`git clone`）
